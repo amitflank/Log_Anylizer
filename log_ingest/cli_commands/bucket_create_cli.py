@@ -586,7 +586,7 @@ def _save_verification_summary(
 )
 @click.option(
     "--data-dir",
-    type=click.Path(exists=True, file_okay=False, path_type=Path),
+    type=click.Path(exists=False, file_okay=False, path_type=Path),
     default=DEFAULT_DATA_DIR,
     help=f"Root directory to search for log files [default: {DEFAULT_DATA_DIR}]",
 )
@@ -771,6 +771,12 @@ def create_buckets(
     console.print()
 
     try:
+        data_dir = data_dir.expanduser()
+        if not data_dir.exists():
+            raise click.ClickException(f"Invalid value for '--data-dir': Directory '{data_dir}' does not exist.")
+        if not data_dir.is_dir():
+            raise click.ClickException(f"Invalid value for '--data-dir': '{data_dir}' is not a directory.")
+
         output_root = output_root.expanduser()
         if output is None:
             output = output_root / DEFAULT_BUCKETS_DIRNAME / "buckets.parquet"
