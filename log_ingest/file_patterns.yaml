@@ -1,0 +1,44 @@
+# File pattern configuration for log ingestion
+# Defines which file patterns are accepted for each category
+# All patterns are lowercase - matching is case-insensitive
+
+# Event log files - parsed with DrainParser
+# Expected format: timestamp [level] [component] [ctx] message
+event_logs:
+  description: "General event and activity logs"
+  patterns:
+    - "*nas*"
+    - "*platformclient*"
+    - "*platformmanager*"
+  parser: "DrainParser"
+  format_regex: '^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}(?:\.\d+)? \+?[-\d:]+\s*\[[^\]]+\]\s*\[[^\]]*\]\s*\[[^\]]*\]\s*.*$'
+
+# Latency metric files - parsed with LatencyTableParser
+# Expected format: Tabular data with latency measurements
+latency_metrics:
+  description: "Performance and latency measurement files"
+  patterns:
+    - "*latency*"
+  parser: "LatencyTableParser"
+  format_notes: "Expects tabular format with read/write latency columns"
+
+# System information files - parsed with SystemInfoParser
+# Expected format: Sections with "Information" headers and key-value pairs
+system_info:
+  description: "System information and configuration logs"
+  patterns:
+    - "*information*"
+    - "*system_info*"
+  parser: "SystemInfoParser"
+  format_notes: "Expects 'Information' sections with key-value pairs"
+
+# Files to explicitly exclude (even if they match user keywords)
+exclude_patterns:
+  - "*.gz"      # Compressed files (need decompression first)
+  - "*.zip"     # Archive files
+  - "*.tar"     # Archive files
+  - "*.bak"     # Backup files
+  - "*.tmp"     # Temporary files
+  - "*.swp"     # Editor swap files
+  - ".ds_store" # Mac system files
+  - "thumbs.db" # Windows system files

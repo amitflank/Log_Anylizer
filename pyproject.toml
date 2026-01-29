@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "log-ingest"
+version = "0.1.0"
+description = "StorONE-style log ingestion to structured tables (logs, metrics, periodic)."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "pandas>=2.2",
+  "python-dateutil>=2.9",
+  "commonregex>=1.5.4",
+  "pyarrow>=17.0.0",
+  "drain3>=0.9.10",
+  "rich>=13.7.0",
+  "pydantic>=2.5.0",
+  "PyYAML>=6.0",
+  "click>=8.1.0",
+  "duckdb>=0.9.0",
+  "deal>=4.25.0",
+  "lightgbm>=4.6.0",
+  "shap>=0.44.1",
+]
+
+[project.scripts]
+s1-ingest = "log_ingest.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+packages = ["log_ingest"]
+
+[tool.setuptools.package-data]
+log_ingest = []
+
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "mypy",
+  "ruff",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.isort]
+known-first-party = ["gbdt_pipeline"]

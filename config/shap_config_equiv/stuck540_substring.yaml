@@ -1,0 +1,37 @@
+incident_substring: 'are stuck'
+# Note: when using incident_substring, the CLI will scan templates in this parquet,
+# show matches, and prompt you to select/confirm the incident template family.
+bucket_path: 'jan-data/buckets/buckets.parquet'
+# Write outputs to a fresh directory (avoid clobbering other runs).
+output_root: 'artifacts/shap_config_equiv/out_stuck540_substring'
+
+# Window settings
+lead_minutes: 3
+max_minutes: 7
+
+# Threshold policy (auto)
+threshold_policy: negative-quantile
+
+# Analysis knobs
+window_analysis: true
+episode_collapse: true
+episode_gap_min_intervals: 5
+
+# Time-series cross-validation (expanding window)
+cv_strategy: time-series
+cv_folds: 5
+cv_test_size: null
+cv_min_train_size: null
+
+# Use a custom exclusion file for this run.
+exclude_file: 'artifacts/shap_config_equiv/exclude_symptoms_custom.yaml'
+exclude_metrics:
+  - info_count
+  - error_count
+  - warning_count
+
+# Explicit output paths (readable JSON outputs)
+summary_json: 'artifacts/shap_config_equiv/stuck540_substring_summary.json'
+shap_json: 'artifacts/shap_config_equiv/stuck540_substring_shap.json'
+shap_report_top_n: 5
+details: compact

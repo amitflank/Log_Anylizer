@@ -1,0 +1,15 @@
+data_dir: jan6
+event_patterns:
+- '*NAS*'
+- '*PlatformClient*'
+- '*PlatformManager*'
+- '*Statistics*'
+- '*console.log*'
+latency_pattern:
+- '*latency*'
+system_pattern:
+- '*Information*'
+file_limit: 80
+bucket_duration: 5
+spike_threshold: 100.0
+output_root: jan-data/
