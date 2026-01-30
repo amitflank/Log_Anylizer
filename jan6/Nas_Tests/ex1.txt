@@ -1,0 +1,46 @@
+2024-10-25 01:44:23.014 +00:00 [Information] [NAS                 ] [T=12,ET=] Openning connection of type ["StorOne.API.RemoteInterface.SCFClientProxy.IStorOneCloud"] to EP ["StorOneNamedEndPoint: /run/s1-sockets/StorOneApi"]. Requesting service [0]
+2024-10-25 01:44:23.044 +00:00 [Verbose    ] [TRACE               ] [T=12,ET=] SCFClient.HeartbeatTimer Initialized HeartbeatInterval=30000
+2024-10-25 01:44:23.052 +00:00 [Information] [SCF                 ] [T=12,ET=] SCFConnection RegisterName: Connection 52253787: "ScfConnectionHelper<IStorOneCloud>" registered (count=1). CurrentConnections="[ScfConnectionHelper<IStorOneCloud>:1]"
+2024-10-25 01:44:23.053 +00:00 [Information] [NAS                 ] [T=8,ET=] OpenConnection done.
+2024-10-25 01:44:23.075 +00:00 [Verbose    ] [NAS                 ] [T=8,ET=] WatchdogInstance.ctor Settings="ExpirationMilliseconds: 300000, ExpirationAction: ProcessId: 77454, TimerName: ThreadPoolKeepAlive pid=77454 pName=NAS-ThreadPoolKeepAliveSensor"
+2024-10-25 01:44:23.075 +00:00 [Verbose    ] [NAS                 ] [T=8,ET=] WatchdogInstance.Disable Id=-1, IsEnabled=True, Settings="ExpirationMilliseconds: 300000, ExpirationAction: ProcessId: 77454, TimerName: ThreadPoolKeepAlive pid=77454 pName=NAS-ThreadPoolKeepAliveSensor"
+2024-10-25 01:44:23.076 +00:00 [Debug      ] [NAS                 ] [T=8,ET=] ThreadPoolKeepAlive created
+2024-10-25 01:44:23.077 +00:00 [Verbose    ] [NAS                 ] [T=8,ET=] WatchdogInstance.ctor Settings="ExpirationMilliseconds: 3600000, ExpirationAction: ProcessId: 77454, TimerName: ProcessKeepaliveWatchdogSensor pid=77454 pName=NAS-ProcessSensor"
+2024-10-25 01:44:23.077 +00:00 [Debug      ] [NAS                 ] [T=8,ET=] ProcessKeepaliveWatchdogSensor created
+2024-10-25 01:44:23.078 +00:00 [Verbose    ] [NAS                 ] [T=18,ET=] WatchdogInstance.Enable Id=-1, IsEnabled=False, Settings="ExpirationMilliseconds: 300000, ExpirationAction: ProcessId: 77454, TimerName: ThreadPoolKeepAlive pid=77454 pName=NAS-ThreadPoolKeepAliveSensor"
+2024-10-25 01:44:23.082 +00:00 [Debug      ] [ConfigurationFileWatcher] [T=8,ET=] /home/user/s1-software/Platform/StorONE.dll.config is a link. Using the real file's path. Followed the link to: /s1data/Platform/StorONE.27545.config.
+2024-10-25 01:44:23.090 +00:00 [Verbose    ] [ConfigurationFileWatcher] [T=8,ET=] Parsed CSV file has 236 properties.
+2024-10-25 01:44:23.097 +00:00 [Verbose    ] [ConfigurationFileWatcher] [T=8,ET=] Found the application config file from the first boot. Reading it to check if any problematic changes had occured...
+2024-10-25 01:44:23.106 +00:00 [Verbose    ] [ConfigurationFileWatcher] [T=8,ET=] GetConfigurationChanges started, comparing current to the value saved on the first boot.
+2024-10-25 01:44:23.169 +00:00 [Verbose    ] [ConfigurationFileWatcher] [T=8,ET=] Common.EditorCollection registered to OnSectionPropertyValuesChanged for [Common.SerilogCommonSettings].
+2024-10-25 01:44:23.170 +00:00 [Verbose    ] [ConfigurationFileWatcher] [T=8,ET=] All classes currently registered to OnSectionPropertyValuesChanged:
+	Common.EditorCollection: [Common.SerilogCommonSettings]
+2024-10-25 01:44:23.171 +00:00 [Information] [ConfigurationFileWatcher] [T=8,ET=] Watching for changes in application configuration file [/s1data/Platform/StorONE.27545.config]
+2024-10-25 01:44:23.171 +00:00 [Verbose    ] [ConfigurationFileWatcher] [T=8,ET=] Nas.Core.MethodSet registered to OnSectionPropertyValuesChanged for [StorOne.Settings.Nas.Nfs].
+2024-10-25 01:44:23.171 +00:00 [Verbose    ] [ConfigurationFileWatcher] [T=8,ET=] All classes currently registered to OnSectionPropertyValuesChanged:
+	Common.EditorCollection: [Common.SerilogCommonSettings]
+	Nas.Core.MethodSet: [StorOne.Settings.Nas.Nfs]
+2024-10-25 01:44:23.171 +00:00 [Verbose    ] [ConfigurationFileWatcher] [T=8,ET=] Nas.Core.MethodSet registered to OnSectionPropertyValuesChanged for [StorOne.Settings.Processes].
+2024-10-25 01:44:23.171 +00:00 [Verbose    ] [ConfigurationFileWatcher] [T=8,ET=] All classes currently registered to OnSectionPropertyValuesChanged:
+	Common.EditorCollection: [Common.SerilogCommonSettings]
+	Nas.Core.MethodSet: [StorOne.Settings.Nas.Nfs, StorOne.Settings.Processes]
+2024-10-25 01:44:23.174 +00:00 [Verbose    ] [NasManager          ] [T=8,ET=] FStrimManager: Periodic fstrim enabled
+2024-10-25 01:44:23.175 +00:00 [Verbose    ] [ConfigurationFileWatcher] [T=8,ET=] Nas.Core.ProcessTree registered to OnSectionPropertyValuesChanged for [StorOne.Settings.FileSystem.Fstrim].
+2024-10-25 01:44:23.175 +00:00 [Verbose    ] [ConfigurationFileWatcher] [T=8,ET=] All classes currently registered to OnSectionPropertyValuesChanged:
+	Common.EditorCollection: [Common.SerilogCommonSettings]
+	Nas.Core.MethodSet: [StorOne.Settings.Nas.Nfs, StorOne.Settings.Processes]
+	Nas.Core.ProcessTree: [StorOne.Settings.FileSystem.Fstrim]
+2024-10-25 01:44:23.178 +00:00 [Debug      ] [NasManager          ] [T=8,ET=] NASConfig: Not supporting multipath. concurrent SessionsCount=1
+2024-10-25 01:44:23.186 +00:00 [Debug      ] [NasManager          ] [T=8,ET=] StopwatchScope: "CleanLocalNasConfiguration" started...
+2024-10-25 01:44:23.191 +00:00 [Verbose    ] [NasManager          ] [T=8,ET=] StopwatchScope: "ProcessExecutor.Execute: [/bin/bash -c \"/usr/bin/smbcontrol smbd ping\"]" started...
+2024-10-25 01:44:23.211 +00:00 [Error      ] [NasManager          ] [T=8,ET=] ProcessExecutor.Execute: Execution failed after 1 retries
+2024-10-25 01:44:23.212 +00:00 [Debug      ] [NasManager          ] [T=8,ET=] IsSambaStatusOK. smbd is not reported by smbcontrol ping
+2024-10-25 01:44:23.213 +00:00 [Verbose    ] [NasManager          ] [T=8,ET=] StopwatchScope: "ProcessExecutor.Execute: [/bin/bash -c \"/bin/systemctl stop smbd\"]" started...
+2024-10-25 01:48:22.977 +00:00 [Verbose    ] [SCSIGateway         ] [T=17,ET=] ScstConfig.FindTenGigInterfaces: interface="DATA"
+2024-10-25 01:48:22.977 +00:00 [Verbose    ] [SCSIGateway         ] [T=17,ET=] StopwatchScope: "ProcessExecutor.Execute: [/bin/bash -c \"ethtool intrconn0\"]" started...
+2024-10-25 01:48:22.978 +00:00 [Verbose    ] [SCSIGateway         ] [T=17,ET=] StopwatchScope: "ProcessExecutor.Execute: [/bin/bash -c \"ethtool intrconn0\"]" completed 1.702ms
+2024-10-25 01:48:22.979 +00:00 [Debug      ] [NasManager          ] [T=17,ET=] NASManager GetUpdatedNasServerSettings. Target Iqn:"iqn.2012-01.com.storone:5882e5a-0005-0009", Internal NAS server initiator iqn="iqn.2012-01.com.storone.internal-5882e5a-0005"
+2024-10-25 01:48:22.987 +00:00 [Debug      ] [NasManager          ] [T=17,ET=] NASManager GetUpdatedNasServerSettings. internal addresses:"[127.0.0.1]"
+2024-10-25 01:48:22.987 +00:00 [Debug      ] [NasManager          ] [T=17,ET=] NASManager GetUpdatedNasServerSettings. Target Portal:"127.0.0.1"
+2024-10-25 01:48:23.021 +00:00 [Debug      ] [NasManager          ] [T=17,ET=] NASManager GetUpdatedNasServerSettings. serverInfo="NASServerInfo. NASServerName=nas-38056-pb, NisDomainName=, NisDomainServer=, InternalAddresses=127.0.0.1, ShareAddressesInfo=NASShareAddressInfo. 10.10.100.109/24;NASShareAddressInfo. 127.0.0.1/24;NASShareAddressInfo. 127.0.0.1/24;NASShareAddressInfo. 10.10.100.104/24;NASShareAddressInfo. 10.10.100.106/24, IqnInfo=TargetIqnInfo. TargetIqn=iqn.2012-01.com.storone:5882e5a-0005-0009, TargetPortal=127.0.0.1, SambaConfiguration=SambaConfig. ActiveDirectoryRealmName=qa-tx-lab.local, ActiveDirectoryWorkgroupName=QA-TX-LAB"
+2024-10-25 01:48:23.021 +00:00 [Debug      ] [NasManager          ] [T=17,ET=] NASManager UpdateNasServerSettings. Initializing Nas Server Settings

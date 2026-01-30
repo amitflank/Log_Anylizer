@@ -1,0 +1,38 @@
+2024-10-25 01:48:24.544 +00:00 [Verbose    ] [NasManager          ] [T=17,ET=] HandleMappedConsistencyGroupChangeInternal (available): Add all dependencies for shares [1232, 1250, 1302] MappedVolumeSnapshots [1218, 1238, 1257, 1276, 1308]
+2024-10-25 01:48:24.546 +00:00 [Debug      ] [] [T=32,ET=] StopwatchScope: "Setting device parameters for drbd2001" started...
+2024-10-25 01:48:24.547 +00:00 [Debug      ] [] [T=24,ET=] StopwatchScope: "Setting device parameters for drbd2003" started...
+2024-10-25 01:48:24.547 +00:00 [Debug      ] [] [T=39,ET=] StopwatchScope: "Setting device parameters for drbd2005" started...
+2024-10-25 01:48:24.547 +00:00 [Verbose    ] [NasManager          ] [T=39,ET=] SetValue: echo "4096" > "/sys/block/drbd2005/queue/max_sectors_kb"
+2024-10-25 01:48:24.547 +00:00 [Verbose    ] [NasManager          ] [T=24,ET=] SetValue: echo "4096" > "/sys/block/drbd2003/queue/max_sectors_kb"
+2024-10-25 01:48:24.547 +00:00 [Verbose    ] [NasManager          ] [T=32,ET=] SetValue: echo "4096" > "/sys/block/drbd2001/queue/max_sectors_kb"
+2024-10-25 01:48:24.547 +00:00 [Debug      ] [] [T=30,ET=] StopwatchScope: "Setting device parameters for sdcq" started...
+2024-10-25 01:48:24.548 +00:00 [Warning    ] [NasManager          ] [T=39,ET=] SetValue: Path /sys/block/drbd2005/device/queue_depth does not exist. (9 retries left...)
+2024-10-25 01:48:24.548 +00:00 [Warning    ] [NasManager          ] [T=24,ET=] SetValue: Path /sys/block/drbd2003/device/queue_depth does not exist. (9 retries left...)
+2024-10-25 01:48:24.548 +00:00 [Warning    ] [NasManager          ] [T=32,ET=] SetValue: Path /sys/block/drbd2001/device/queue_depth does not exist. (9 retries left...)
+2024-10-25 01:48:24.548 +00:00 [Verbose    ] [NasManager          ] [T=30,ET=] SetValue: echo "4096" > "/sys/block/sdcq/queue/max_sectors_kb"
+2024-10-25 01:48:24.548 +00:00 [Verbose    ] [NasManager          ] [T=30,ET=] SetValue: echo "256" > "/sys/block/sdcq/device/queue_depth"
+2024-10-25 01:48:24.548 +00:00 [Verbose    ] [NasManager          ] [T=30,ET=] SetValue: echo "512" > "/sys/block/sdcq/queue/nr_requests"
+2024-10-25 01:48:24.548 +00:00 [Debug      ] [] [T=37,ET=] StopwatchScope: "Setting device parameters for sdco" started...
+2024-10-25 01:48:24.548 +00:00 [Verbose    ] [NasManager          ] [T=37,ET=] SetValue: echo "4096" > "/sys/block/sdco/queue/max_sectors_kb"
+2024-10-25 01:48:24.548 +00:00 [Verbose    ] [NasManager          ] [T=37,ET=] SetValue: echo "256" > "/sys/block/sdco/device/queue_depth"
+2024-10-25 01:48:24.548 +00:00 [Verbose    ] [NasManager          ] [T=37,ET=] SetValue: echo "512" > "/sys/block/sdco/queue/nr_requests"
+2024-10-25 01:48:24.549 +00:00 [Debug      ] [] [T=17,ET=] StopwatchScope: "Adding 5 NAS volume Snapshot Assignments" started...
+2024-10-25 01:48:24.557 +00:00 [Debug      ] [NasManager          ] [T=26,ET=] NASManager.MountVolumeAssignment. mount point("/volumes/Vol-1218")
+2024-10-25 01:48:24.557 +00:00 [Debug      ] [NasManager          ] [T=31,ET=] NASManager.MountVolumeAssignment. mount point("/volumes/Vol-1308")
+2024-10-25 01:48:24.557 +00:00 [Debug      ] [NasManager          ] [T=40,ET=] NASManager.MountVolumeAssignment. mount point("/volumes/Vol-1238")
+2024-10-25 01:48:24.557 +00:00 [Debug      ] [NasManager          ] [T=38,ET=] NASManager.MountVolumeAssignment. mount point("/volumes/Vol-1276")
+2024-10-25 01:48:25.099 +00:00 [Verbose    ] [NasManager          ] [T=17,ET=] StopwatchScope: "ProcessExecutor.Execute: [/bin/bash -c \"/bin/systemctl start memcached\"]" completed 5.774ms
+2024-10-25 01:48:25.173 +00:00 [Information] [ObjectStore         ] [T=17,ET=] ChangeObjectStoreSecrets : objectStoreEntityId: 1269, useSSl: False, objectUsers: [StorOne.API.ConfigurationData.ObjectAccessKey], restartProcess:False
+2024-10-25 01:48:25.173 +00:00 [Information] [ObjectStore         ] [T=17,ET=] ChangeObjectStoreSecrets : Decrypting 801916C33AB7EF6E90FBB2602B230948FAB2F8510DADA9A0A4988F3A255C4D0DF189E97F4A6AEF7F826192CFE80B60BD36E6A698722BFDF865FDD37F5239F5F879A9FE8FEB4974777040D64C34D4979E070BE0B831AFBD666006F2F550D7E9D54631B737462D5D83713C494E0583F9214F73281B48E4F478DA067C02EE83270CF337495FAF0C0094708EC667AACD5799BDC7938DD46A2390C4977980D96936525BC1196F1FD5029B92B3007C4904256C56A8AA9F3D3DD28964046776BA79758764761DB6538FD24C637BC943EE1E8DBA3898F663CE0DD60A0D1471A097E72054F87C4DC2F8F88D1357174F339427FA824F20637E203CE6369ADD26259ABFEA35 
+2024-10-25 01:48:25.185 +00:00 [Verbose    ] [ObjectStore         ] [T=17,ET=] VerifyCurrentConfigFileExist:  configDirectory is "/volumes/Vol-1257/exports/.swift.sys"
+2024-10-25 01:48:25.197 +00:00 [Information] [ObjectStore         ] [T=17,ET=] ChangeObjectStoreSecrets done for /volumes/Vol-1257/exports/.swift.sys/proxy-server.conf
+2024-10-25 01:48:25.199 +00:00 [Verbose    ] [NasManager          ] [T=17,ET=] StopwatchScope: "ProcessExecutor.Execute: [/bin/chmod 755 /volumes/Vol-1257/exports/.swift.sys/ringbuilder-1269.sh]" started...
+2024-10-25 01:48:25.202 +00:00 [Verbose    ] [NasManager          ] [T=17,ET=] StopwatchScope: "ProcessExecutor.Execute: [/bin/chmod 755 /volumes/Vol-1257/exports/.swift.sys/ringbuilder-1269.sh]" completed 2.159ms
+2024-10-25 01:48:25.202 +00:00 [Verbose    ] [ObjectStore         ] [T=17,ET=] StopwatchScope: "ProcessExecutor.Execute: [/bin/bash -c \"/volumes/Vol-1257/exports/.swift.sys/ringbuilder-1269.sh\"]" started...
+2024-10-25 01:48:27.227 +00:00 [Verbose    ] [ObjectStore         ] [T=17,ET=] StopwatchScope: "ProcessExecutor.Execute: [/bin/bash -c \"/volumes/Vol-1257/exports/.swift.sys/ringbuilder-1269.sh\"]" completed 2,024.829ms
+2024-10-25 01:48:30.230 +00:00 [Verbose    ] [NasManager          ] [T=17,ET=] StopwatchScope: "ProcessExecutor.Execute: [/bin/chmod 755 /volumes/Vol-1257/exports/.swift.sys/init-1269.sh]" started...
+2024-10-25 01:48:30.232 +00:00 [Verbose    ] [NasManager          ] [T=17,ET=] StopwatchScope: "ProcessExecutor.Execute: [/bin/chmod 755 /volumes/Vol-1257/exports/.swift.sys/init-1269.sh]" completed 1.963ms
+2024-10-25 01:48:30.233 +00:00 [Verbose    ] [ObjectStore         ] [T=17,ET=] StopwatchScope: "ProcessExecutor.Execute: [/bin/bash -c \"/volumes/Vol-1257/exports/.swift.sys/init-1269.sh\"]" started...
+2024-10-25 01:48:35.854 +00:00 [Verbose    ] [ObjectStore         ] [T=17,ET=] StopwatchScope: "ProcessExecutor.Execute: [/bin/bash -c \"/volumes/Vol-1257/exports/.swift.sys/init-1269.sh\"]" completed 5,620.935ms
+2024-10-25 01:48:35.854 +00:00 [Verbose    ] [ObjectStore         ] [T=17,ET=] Start new process for object store 1269 mappedVolumeSnapshotEntityID 1257 completed successfully.
+2024-10-25 01:48:35.856 +00:00 [Verbose    ] [ObjectStore         ] [T=17,ET=] Using Swift object store.

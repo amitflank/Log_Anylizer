@@ -1,0 +1,51 @@
+2024-10-25 01:56:52.828 +00:00 [Warning    ] [NasManager          ] [T=106,ET=] SetValue: Path /sys/block/drbd2001/device/queue_depth does not exist. (9 retries left...)
+2024-10-25 01:56:52.828 +00:00 [Debug      ] [] [T=109,ET=] StopwatchScope: "Setting device parameters for drbd2003" started...
+2024-10-25 01:56:52.828 +00:00 [Verbose    ] [NasManager          ] [T=109,ET=] SetValue: echo "4096" > "/sys/block/drbd2003/queue/max_sectors_kb"
+2024-10-25 01:56:52.828 +00:00 [Debug      ] [] [T=108,ET=] StopwatchScope: "Setting device parameters for drbd2005" started...
+2024-10-25 01:56:52.828 +00:00 [Warning    ] [NasManager          ] [T=109,ET=] SetValue: Path /sys/block/drbd2003/device/queue_depth does not exist. (9 retries left...)
+2024-10-25 01:56:52.828 +00:00 [Verbose    ] [NasManager          ] [T=108,ET=] SetValue: echo "4096" > "/sys/block/drbd2005/queue/max_sectors_kb"
+2024-10-25 01:56:52.828 +00:00 [Debug      ] [] [T=102,ET=] StopwatchScope: "Setting device parameters for sdcq" started...
+2024-10-25 01:56:52.829 +00:00 [Warning    ] [NasManager          ] [T=108,ET=] SetValue: Path /sys/block/drbd2005/device/queue_depth does not exist. (9 retries left...)
+2024-10-25 01:56:52.829 +00:00 [Debug      ] [] [T=107,ET=] StopwatchScope: "Setting device parameters for sdco" started...
+2024-10-25 01:56:52.829 +00:00 [Verbose    ] [NasManager          ] [T=102,ET=] SetValue: echo "4096" > "/sys/block/sdcq/queue/max_sectors_kb"
+2024-10-25 01:56:52.829 +00:00 [Verbose    ] [NasManager          ] [T=107,ET=] SetValue: echo "4096" > "/sys/block/sdco/queue/max_sectors_kb"
+2024-10-25 01:56:52.829 +00:00 [Debug      ] [] [T=87,ET=] StopwatchScope: "Setting device parameters for drbd1001" started...
+2024-10-25 01:56:52.830 +00:00 [Verbose    ] [NasManager          ] [T=102,ET=] SetValue: echo "256" > "/sys/block/sdcq/device/queue_depth"
+2024-10-25 01:56:52.830 +00:00 [Verbose    ] [NasManager          ] [T=87,ET=] SetValue: echo "4096" > "/sys/block/drbd1001/queue/max_sectors_kb"
+2024-10-25 01:56:52.830 +00:00 [Verbose    ] [NasManager          ] [T=107,ET=] SetValue: echo "256" > "/sys/block/sdco/device/queue_depth"
+2024-10-25 01:56:52.830 +00:00 [Warning    ] [NasManager          ] [T=87,ET=] SetValue: Path /sys/block/drbd1001/device/queue_depth does not exist. (9 retries left...)
+2024-10-25 01:56:52.831 +00:00 [Verbose    ] [NasManager          ] [T=102,ET=] SetValue: echo "512" > "/sys/block/sdcq/queue/nr_requests"
+2024-10-25 01:56:52.831 +00:00 [Verbose    ] [NasManager          ] [T=107,ET=] SetValue: echo "512" > "/sys/block/sdco/queue/nr_requests"
+2024-10-25 01:56:52.831 +00:00 [Verbose    ] [NasManager          ] [T=102,ET=] SetValue: echo "120" > "/sys/block/sdcq/device/timeout"
+2024-10-25 01:56:52.832 +00:00 [Verbose    ] [NasManager          ] [T=107,ET=] SetValue: echo "120" > "/sys/block/sdco/device/timeout"
+2024-10-25 01:56:52.832 +00:00 [Verbose    ] [NasManager          ] [T=102,ET=] SetValue: echo "mq-deadline" > "/sys/block/sdcq/queue/scheduler"
+2024-10-25 01:56:52.832 +00:00 [Verbose    ] [NasManager          ] [T=107,ET=] SetValue: echo "mq-deadline" > "/sys/block/sdco/queue/scheduler"
+2024-10-25 01:56:52.832 +00:00 [Debug      ] [] [T=102,ET=] StopwatchScope: "Setting device parameters for sdcq" completed 3.946ms
+2024-10-25 01:56:52.833 +00:00 [Debug      ] [] [T=107,ET=] StopwatchScope: "Setting device parameters for sdco" completed 3.628ms
+2024-10-25 01:56:52.837 +00:00 [Verbose    ] [NasManager          ] [T=85,ET=] Adding FileSystemVolumes: [FileSystemVolume 1360: VolumeEntityId=1347, FileSystemProfile=1, FileSystem=Ext4, PackMetadata=False, MappedVolumeSnapshotFileSystemSizes=[]]
+2024-10-25 01:56:52.837 +00:00 [Debug      ] [] [T=85,ET=] StopwatchScope: "Adding 1 NAS volumes" started...
+2024-10-25 01:58:39.193 +00:00 [Warning    ] [NasManager          ] [T=106,ET=] SetValue: Path /sys/block/drbd1008/device/queue_depth does not exist. (9 retries left...)
+2024-10-25 01:58:39.193 +00:00 [Debug      ] [] [T=120,ET=] StopwatchScope: "HandleCommitConfigurationChanges(2730165360627854350)" started...
+2024-10-25 01:58:39.193 +00:00 [Debug      ] [] [T=119,ET=] StopwatchScope: "Setting device parameters for drbd1010" started...
+2024-10-25 01:58:39.193 +00:00 [Verbose    ] [NasManager          ] [T=119,ET=] SetValue: echo "4096" > "/sys/block/drbd1010/queue/max_sectors_kb"
+2024-10-25 01:58:39.193 +00:00 [Verbose    ] [NasManager          ] [T=120,ET=] StopwatchScope: "ProcessExecutor.Execute: [/bin/bash -c \"/usr/bin/udevadm settle --timeout=60\"]" started...
+2024-10-25 01:58:39.193 +00:00 [Warning    ] [NasManager          ] [T=119,ET=] SetValue: Path /sys/block/drbd1010/device/queue_depth does not exist. (9 retries left...)
+2024-10-25 01:58:39.196 +00:00 [Debug      ] [] [T=122,ET=] StopwatchScope: "Setting device parameters for drbd1001" started...
+2024-10-25 01:58:39.196 +00:00 [Verbose    ] [NasManager          ] [T=122,ET=] SetValue: echo "4096" > "/sys/block/drbd1001/queue/max_sectors_kb"
+2024-10-25 01:58:39.197 +00:00 [Warning    ] [NasManager          ] [T=122,ET=] SetValue: Path /sys/block/drbd1001/device/queue_depth does not exist. (9 retries left...)
+2024-10-25 01:58:39.197 +00:00 [Debug      ] [] [T=121,ET=] StopwatchScope: "Setting device parameters for drbd1003" started...
+2024-10-25 01:58:39.197 +00:00 [Verbose    ] [NasManager          ] [T=121,ET=] SetValue: echo "4096" > "/sys/block/drbd1003/queue/max_sectors_kb"
+2024-10-25 01:58:39.197 +00:00 [Warning    ] [NasManager          ] [T=121,ET=] SetValue: Path /sys/block/drbd1003/device/queue_depth does not exist. (9 retries left...)
+2024-10-25 01:58:39.198 +00:00 [Debug      ] [] [T=126,ET=] StopwatchScope: "Setting device parameters for drbd1005" started...
+2024-10-25 01:58:39.198 +00:00 [Verbose    ] [NasManager          ] [T=126,ET=] SetValue: echo "4096" > "/sys/block/drbd1005/queue/max_sectors_kb"
+2024-10-25 01:58:39.199 +00:00 [Debug      ] [] [T=116,ET=] StopwatchScope: "Setting device parameters for drbd2008" started...
+2024-10-25 01:58:39.199 +00:00 [Warning    ] [NasManager          ] [T=126,ET=] SetValue: Path /sys/block/drbd1005/device/queue_depth does not exist. (9 retries left...)
+2024-10-25 01:58:39.199 +00:00 [Verbose    ] [NasManager          ] [T=116,ET=] SetValue: echo "4096" > "/sys/block/drbd2008/queue/max_sectors_kb"
+2024-10-25 01:58:39.199 +00:00 [Warning    ] [NasManager          ] [T=116,ET=] SetValue: Path /sys/block/drbd2008/device/queue_depth does not exist. (9 retries left...)
+2024-10-25 01:58:39.201 +00:00 [Debug      ] [] [T=125,ET=] StopwatchScope: "Setting device parameters for drbd2010" started...
+2024-10-25 01:58:39.202 +00:00 [Verbose    ] [NasManager          ] [T=125,ET=] SetValue: echo "4096" > "/sys/block/drbd2010/queue/max_sectors_kb"
+2024-10-25 01:58:39.202 +00:00 [Warning    ] [NasManager          ] [T=125,ET=] SetValue: Path /sys/block/drbd2010/device/queue_depth does not exist. (9 retries left...)
+2024-10-25 01:58:39.211 +00:00 [Warning    ] [NasManager          ] [T=84,ET=] SetValue: Path /sys/block/drbd2001/device/queue_depth does not exist. (8 retries left...)
+2024-10-25 02:57:38.934 +00:00 [Debug      ] [] [T=150,ET=] StopwatchScope: "HandleCommitConfigurationChanges(1799837851723866367)" completed 1,724.868ms
+2024-10-25 02:57:53.580 +00:00 [Information] [NAS                 ] [T=18,ET=] 2 active worker threads, 32765 available worker threads) (0 active completion threads, 1000 available completion threads.
+2024-10-25 02:58:23.585 +00:00 [Information] [NAS                 ] [T=18,ET=] 2 active worker threads, 32765 available worker threads) (0 active completion threads, 1000 available completion threads.

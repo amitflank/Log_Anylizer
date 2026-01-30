@@ -34,6 +34,14 @@ python -m pip install --upgrade pip
 python -m pip install -e .
 ```
 
+### Set up CLI aliases (used in UserDocs)
+
+```bash
+alias bucket-build='python -m log_ingest.cli_commands.cli bucket create'
+alias bucket-select='python -m log_ingest.cli_commands.cli select-buckets'
+alias shap='python -m gbdt_pipeline.cli'
+```
+
 ## Run the CLI (follow UserDocs)
 
 Start with the overview in `UserDocs/README.md`, then use the specific guides:
@@ -42,8 +50,3 @@ Start with the overview in `UserDocs/README.md`, then use the specific guides:
 - Bucket selection: `UserDocs/bucket_select_cli.md`
 - SHAP analysis: `UserDocs/shap_analysis_cli.md`
 
-The CLI entry point used in the guides is:
-
-```bash
-python -m log_ingest.cli_commands.cli --help
-```

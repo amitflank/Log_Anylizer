@@ -1,0 +1,3884 @@
+Periodic information will be logged every 00:05:00
+
+============================================
+[10/25/2024 1:49:08 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.062277025792TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.067645734912TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 6 volumes. 0.062277025792TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.012884901888TB / 53.51529250816TB
+    metapool : 7 drives. 11 volumes. 0.054760833024TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1190   | N+K: 3    | FreeChunks: 603,129    | FreePercent: 100.00%    - Ok
+Pool: 1202   | N+K: 3    | FreeChunks: 199,251    | FreePercent: 99.95%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 11
+
+Erasure Coding Distribution:
+    11 2+2 volumes
+
+Protocol Distribution:
+    1 Block volumes
+    10 File/Object volumes
+
+Sector Size Distribution:
+    11 4096B volumes
+
+Volume Geometry:
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1205 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 4.06%
+    Disk   Utilization: 0.72%
+    Memory Utilization: 29.24%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : All
+    Node runs 11 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.105
+    10.10.100.104
+    10.10.100.106
+    10.10.100.103
+    10.10.100.109
+    10.10.100.102
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  198.51.100.3:52002 node-id:0 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:2006 replication:Off peer-disk:DUnknown resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  198.51.100.3:52000 node-id:0 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:2002 replication:Off peer-disk:DUnknown resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  198.51.100.3:52001 node-id:0 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:2004 replication:Off peer-disk:DUnknown resync-suspended:no
+
+
+
+============================================
+[10/25/2024 1:54:09 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.062277025792TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.06442450944TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 6 volumes. 0.062277025792TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.011811160064TB / 53.51529250816TB
+    metapool : 7 drives. 11 volumes. 0.052613349376TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1190   | N+K: 3    | FreeChunks: 603,129    | FreePercent: 100.00%    - Ok
+Pool: 1202   | N+K: 3    | FreeChunks: 199,251    | FreePercent: 99.95%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 11
+
+Erasure Coding Distribution:
+    11 2+2 volumes
+
+Protocol Distribution:
+    1 Block volumes
+    10 File/Object volumes
+
+Sector Size Distribution:
+    11 4096B volumes
+
+Volume Geometry:
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 8.39%
+    Disk   Utilization: 2.36%
+    Memory Utilization: 30.80%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : Local
+    Node runs 10 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.105
+    10.10.100.104
+    10.10.100.106
+    10.10.100.109
+    10.10.100.102
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  198.51.100.3:52002 node-id:0 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:2006 replication:Off peer-disk:DUnknown resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  198.51.100.3:52000 node-id:0 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:2002 replication:Off peer-disk:DUnknown resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  198.51.100.3:52001 node-id:0 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:2004 replication:Off peer-disk:DUnknown resync-suspended:no
+
+
+
+============================================
+[10/25/2024 1:59:10 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.11811160064TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.18253611008TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 12 volumes. 0.11811160064TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.07516192768TB / 53.51529250816TB
+    metapool : 7 drives. 22 volumes. 0.1073741824TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1202   | N+K: 3    | FreeChunks: 199,164    | FreePercent: 99.90%     - Ok
+Pool: 1201   | N+K: 3    | FreeChunks: 199,314    | FreePercent: 99.98%     - Ok
+Pool: 1190   | N+K: 3    | FreeChunks: 602,919    | FreePercent: 99.96%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 22
+
+Erasure Coding Distribution:
+    22 2+2 volumes
+
+Protocol Distribution:
+    2 Block volumes
+    20 File/Object volumes
+
+Sector Size Distribution:
+    22 4096B volumes
+
+Volume Geometry:
+    Volume 1345 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1366 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1412 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1439 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1389 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1347: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1368: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1414: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1391: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1441: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 2.50%
+    Disk   Utilization: 1.37%
+    Memory Utilization: 41.86%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : Local
+    Node runs 20 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.105
+    10.10.100.104
+    10.10.100.106
+    10.10.100.109
+    10.10.100.102
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1944d790-86c0-4760-a63e-4d9404e3486f node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1008 minor:1008 disk:UpToDate backing_dev:/run/s1-local/1276 quorum:yes
+      blocked:no
+  volume:1009 minor:1009 disk:UpToDate backing_dev:/run/s1-local/1278 quorum:yes
+      blocked:no
+  10.10.100.42:51001 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1009 replication:Established peer-disk:UpToDate resync-suspended:no
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  10.10.100.42:51000 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2006 replication:Established peer-disk:UpToDate resync-suspended:no
+682da947-9539-4064-ae95-08a9cd1049df node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2008 minor:2008 disk:Inconsistent backing_dev:/run/s1-local/1417
+      quorum:yes blocked:no
+  volume:2009 minor:2009 disk:UpToDate backing_dev:/run/s1-local/1418 quorum:yes
+      blocked:no
+  10.10.100.42:52004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2008 replication:SyncTarget peer-disk:UpToDate done:99.59
+        resync-suspended:no
+    volume:2009 replication:Established peer-disk:UpToDate resync-suspended:no
+9e928436-adf4-432a-b6ff-6b5ab601694c node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1005 minor:1005 disk:UpToDate backing_dev:/run/s1-local/1394 quorum:yes
+      blocked:no
+  volume:1006 minor:1006 disk:UpToDate backing_dev:/run/s1-local/1395 quorum:yes
+      blocked:no
+  10.10.100.42:52003 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1006 replication:Established peer-disk:UpToDate resync-suspended:no
+a00ee1a5-f748-432a-b3f7-17735f492bd9 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1010 minor:1010 disk:UpToDate backing_dev:/run/s1-local/1308 quorum:yes
+      blocked:no
+  volume:1011 minor:1011 disk:UpToDate backing_dev:/run/s1-local/1310 quorum:yes
+      blocked:no
+  10.10.100.42:51002 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1011 replication:Established peer-disk:UpToDate resync-suspended:no
+a4488022-a6b3-4c3a-9984-d94be0053ffa node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1003 minor:1003 disk:UpToDate backing_dev:/run/s1-local/1371 quorum:yes
+      blocked:no
+  volume:1004 minor:1004 disk:UpToDate backing_dev:/run/s1-local/1372 quorum:yes
+      blocked:no
+  10.10.100.42:52002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1004 replication:Established peer-disk:UpToDate resync-suspended:no
+b875b260-d06b-4a68-aed4-81f2b22cbd77 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1001 minor:1001 disk:UpToDate backing_dev:/run/s1-local/1350 quorum:yes
+      blocked:no
+  volume:1002 minor:1002 disk:UpToDate backing_dev:/run/s1-local/1351 quorum:yes
+      blocked:no
+  10.10.100.42:52001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1002 replication:Established peer-disk:UpToDate resync-suspended:no
+dd0d8442-0b9e-4ce8-99ea-6c74490f1336 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2010 minor:2010 disk:UpToDate backing_dev:/run/s1-local/1444 quorum:yes
+      blocked:no
+  volume:2011 minor:2011 disk:Inconsistent backing_dev:/run/s1-local/1445
+      quorum:yes blocked:no
+  10.10.100.42:52005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2011 replication:SyncTarget peer-disk:UpToDate done:54.31
+        resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  10.10.100.42:51004 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2002 replication:Established peer-disk:UpToDate resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  10.10.100.42:51005 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2004 replication:Established peer-disk:UpToDate resync-suspended:no
+
+
+
+============================================
+[10/25/2024 2:04:10 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.119185342464TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.183609851904TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 12 volumes. 0.119185342464TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.076235669504TB / 53.51529250816TB
+    metapool : 7 drives. 22 volumes. 0.1073741824TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1202   | N+K: 3    | FreeChunks: 199,164    | FreePercent: 99.90%     - Ok
+Pool: 1201   | N+K: 3    | FreeChunks: 199,314    | FreePercent: 99.98%     - Ok
+Pool: 1190   | N+K: 3    | FreeChunks: 602,919    | FreePercent: 99.96%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 22
+
+Erasure Coding Distribution:
+    22 2+2 volumes
+
+Protocol Distribution:
+    2 Block volumes
+    20 File/Object volumes
+
+Sector Size Distribution:
+    22 4096B volumes
+
+Volume Geometry:
+    Volume 1412 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1345 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1366 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1439 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1389 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1347: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1368: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1414: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1441: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1391: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 2.23%
+    Disk   Utilization: 0.39%
+    Memory Utilization: 41.92%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : Local
+    Node runs 20 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.105
+    10.10.100.104
+    10.10.100.106
+    10.10.100.109
+    10.10.100.102
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1944d790-86c0-4760-a63e-4d9404e3486f node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1008 minor:1008 disk:UpToDate backing_dev:/run/s1-local/1276 quorum:yes
+      blocked:no
+  volume:1009 minor:1009 disk:UpToDate backing_dev:/run/s1-local/1278 quorum:yes
+      blocked:no
+  10.10.100.42:51001 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1009 replication:Established peer-disk:UpToDate resync-suspended:no
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  10.10.100.42:51000 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2006 replication:Established peer-disk:UpToDate resync-suspended:no
+682da947-9539-4064-ae95-08a9cd1049df node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2008 minor:2008 disk:UpToDate backing_dev:/run/s1-local/1417 quorum:yes
+      blocked:no
+  volume:2009 minor:2009 disk:UpToDate backing_dev:/run/s1-local/1418 quorum:yes
+      blocked:no
+  10.10.100.42:52004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2009 replication:Established peer-disk:UpToDate resync-suspended:no
+9e928436-adf4-432a-b6ff-6b5ab601694c node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1005 minor:1005 disk:UpToDate backing_dev:/run/s1-local/1394 quorum:yes
+      blocked:no
+  volume:1006 minor:1006 disk:UpToDate backing_dev:/run/s1-local/1395 quorum:yes
+      blocked:no
+  10.10.100.42:52003 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1006 replication:Established peer-disk:UpToDate resync-suspended:no
+a00ee1a5-f748-432a-b3f7-17735f492bd9 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1010 minor:1010 disk:UpToDate backing_dev:/run/s1-local/1308 quorum:yes
+      blocked:no
+  volume:1011 minor:1011 disk:UpToDate backing_dev:/run/s1-local/1310 quorum:yes
+      blocked:no
+  10.10.100.42:51002 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1011 replication:Established peer-disk:UpToDate resync-suspended:no
+a4488022-a6b3-4c3a-9984-d94be0053ffa node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1003 minor:1003 disk:UpToDate backing_dev:/run/s1-local/1371 quorum:yes
+      blocked:no
+  volume:1004 minor:1004 disk:UpToDate backing_dev:/run/s1-local/1372 quorum:yes
+      blocked:no
+  10.10.100.42:52002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1004 replication:Established peer-disk:UpToDate resync-suspended:no
+b875b260-d06b-4a68-aed4-81f2b22cbd77 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1001 minor:1001 disk:UpToDate backing_dev:/run/s1-local/1350 quorum:yes
+      blocked:no
+  volume:1002 minor:1002 disk:UpToDate backing_dev:/run/s1-local/1351 quorum:yes
+      blocked:no
+  10.10.100.42:52001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1002 replication:Established peer-disk:UpToDate resync-suspended:no
+dd0d8442-0b9e-4ce8-99ea-6c74490f1336 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2010 minor:2010 disk:UpToDate backing_dev:/run/s1-local/1444 quorum:yes
+      blocked:no
+  volume:2011 minor:2011 disk:UpToDate backing_dev:/run/s1-local/1445 quorum:yes
+      blocked:no
+  10.10.100.42:52005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2011 replication:Established peer-disk:UpToDate resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  10.10.100.42:51004 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2002 replication:Established peer-disk:UpToDate resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  10.10.100.42:51005 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2004 replication:Established peer-disk:UpToDate resync-suspended:no
+
+
+
+============================================
+[10/25/2024 2:09:11 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.119185342464TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.183609851904TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 12 volumes. 0.119185342464TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.076235669504TB / 53.51529250816TB
+    metapool : 7 drives. 22 volumes. 0.1073741824TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1202   | N+K: 3    | FreeChunks: 198,960    | FreePercent: 99.80%     - Ok
+Pool: 1201   | N+K: 3    | FreeChunks: 199,074    | FreePercent: 99.86%     - Ok
+Pool: 1190   | N+K: 3    | FreeChunks: 602,709    | FreePercent: 99.93%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306, 1334, 1348, 1369, 1392, 1415, 1442]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 22
+
+Erasure Coding Distribution:
+    22 2+2 volumes
+
+Protocol Distribution:
+    2 Block volumes
+    20 File/Object volumes
+
+Sector Size Distribution:
+    22 4096B volumes
+
+Volume Geometry:
+    Volume 1412 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1345 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1366 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1439 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1389 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1347: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1368: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1414: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1441: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1391: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 0.76%
+    Disk   Utilization: 0.34%
+    Memory Utilization: 41.88%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : Local
+    Node runs 20 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.105
+    10.10.100.104
+    10.10.100.106
+    10.10.100.109
+    10.10.100.102
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1944d790-86c0-4760-a63e-4d9404e3486f node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1008 minor:1008 disk:UpToDate backing_dev:/run/s1-local/1276 quorum:yes
+      blocked:no
+  volume:1009 minor:1009 disk:UpToDate backing_dev:/run/s1-local/1278 quorum:yes
+      blocked:no
+  10.10.100.42:51001 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1009 replication:Established peer-disk:UpToDate resync-suspended:no
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  10.10.100.42:51000 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2006 replication:Established peer-disk:UpToDate resync-suspended:no
+682da947-9539-4064-ae95-08a9cd1049df node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2008 minor:2008 disk:UpToDate backing_dev:/run/s1-local/1417 quorum:yes
+      blocked:no
+  volume:2009 minor:2009 disk:UpToDate backing_dev:/run/s1-local/1418 quorum:yes
+      blocked:no
+  10.10.100.42:52004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2009 replication:Established peer-disk:UpToDate resync-suspended:no
+9e928436-adf4-432a-b6ff-6b5ab601694c node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1005 minor:1005 disk:UpToDate backing_dev:/run/s1-local/1394 quorum:yes
+      blocked:no
+  volume:1006 minor:1006 disk:UpToDate backing_dev:/run/s1-local/1395 quorum:yes
+      blocked:no
+  10.10.100.42:52003 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1006 replication:Established peer-disk:UpToDate resync-suspended:no
+a00ee1a5-f748-432a-b3f7-17735f492bd9 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1010 minor:1010 disk:UpToDate backing_dev:/run/s1-local/1308 quorum:yes
+      blocked:no
+  volume:1011 minor:1011 disk:UpToDate backing_dev:/run/s1-local/1310 quorum:yes
+      blocked:no
+  10.10.100.42:51002 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1011 replication:Established peer-disk:UpToDate resync-suspended:no
+a4488022-a6b3-4c3a-9984-d94be0053ffa node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1003 minor:1003 disk:UpToDate backing_dev:/run/s1-local/1371 quorum:yes
+      blocked:no
+  volume:1004 minor:1004 disk:UpToDate backing_dev:/run/s1-local/1372 quorum:yes
+      blocked:no
+  10.10.100.42:52002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1004 replication:Established peer-disk:UpToDate resync-suspended:no
+b875b260-d06b-4a68-aed4-81f2b22cbd77 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1001 minor:1001 disk:UpToDate backing_dev:/run/s1-local/1350 quorum:yes
+      blocked:no
+  volume:1002 minor:1002 disk:UpToDate backing_dev:/run/s1-local/1351 quorum:yes
+      blocked:no
+  10.10.100.42:52001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1002 replication:Established peer-disk:UpToDate resync-suspended:no
+dd0d8442-0b9e-4ce8-99ea-6c74490f1336 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2010 minor:2010 disk:UpToDate backing_dev:/run/s1-local/1444 quorum:yes
+      blocked:no
+  volume:2011 minor:2011 disk:UpToDate backing_dev:/run/s1-local/1445 quorum:yes
+      blocked:no
+  10.10.100.42:52005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2011 replication:Established peer-disk:UpToDate resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  10.10.100.42:51004 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2002 replication:Established peer-disk:UpToDate resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  10.10.100.42:51005 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2004 replication:Established peer-disk:UpToDate resync-suspended:no
+
+
+
+============================================
+[10/25/2024 2:14:12 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.120259084288TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.184683593728TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 12 volumes. 0.120259084288TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.077309411328TB / 53.51529250816TB
+    metapool : 7 drives. 22 volumes. 0.1073741824TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1202   | N+K: 3    | FreeChunks: 198,960    | FreePercent: 99.80%     - Ok
+Pool: 1201   | N+K: 3    | FreeChunks: 199,074    | FreePercent: 99.86%     - Ok
+Pool: 1190   | N+K: 3    | FreeChunks: 602,709    | FreePercent: 99.93%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306, 1334, 1348, 1369, 1392, 1415, 1442]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 22
+
+Erasure Coding Distribution:
+    22 2+2 volumes
+
+Protocol Distribution:
+    2 Block volumes
+    20 File/Object volumes
+
+Sector Size Distribution:
+    22 4096B volumes
+
+Volume Geometry:
+    Volume 1412 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1345 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1366 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1439 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1389 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1347: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1368: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1414: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1441: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1391: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 3.02%
+    Disk   Utilization: 0.38%
+    Memory Utilization: 41.88%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : Local
+    Node runs 20 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.105
+    10.10.100.104
+    10.10.100.106
+    10.10.100.109
+    10.10.100.102
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1944d790-86c0-4760-a63e-4d9404e3486f node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1008 minor:1008 disk:UpToDate backing_dev:/run/s1-local/1276 quorum:yes
+      blocked:no
+  volume:1009 minor:1009 disk:UpToDate backing_dev:/run/s1-local/1278 quorum:yes
+      blocked:no
+  10.10.100.42:51001 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1009 replication:Established peer-disk:UpToDate resync-suspended:no
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  10.10.100.42:51000 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2006 replication:Established peer-disk:UpToDate resync-suspended:no
+682da947-9539-4064-ae95-08a9cd1049df node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2008 minor:2008 disk:UpToDate backing_dev:/run/s1-local/1417 quorum:yes
+      blocked:no
+  volume:2009 minor:2009 disk:UpToDate backing_dev:/run/s1-local/1418 quorum:yes
+      blocked:no
+  10.10.100.42:52004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2009 replication:Established peer-disk:UpToDate resync-suspended:no
+9e928436-adf4-432a-b6ff-6b5ab601694c node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1005 minor:1005 disk:UpToDate backing_dev:/run/s1-local/1394 quorum:yes
+      blocked:no
+  volume:1006 minor:1006 disk:UpToDate backing_dev:/run/s1-local/1395 quorum:yes
+      blocked:no
+  10.10.100.42:52003 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1006 replication:Established peer-disk:UpToDate resync-suspended:no
+a00ee1a5-f748-432a-b3f7-17735f492bd9 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1010 minor:1010 disk:UpToDate backing_dev:/run/s1-local/1308 quorum:yes
+      blocked:no
+  volume:1011 minor:1011 disk:UpToDate backing_dev:/run/s1-local/1310 quorum:yes
+      blocked:no
+  10.10.100.42:51002 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1011 replication:Established peer-disk:UpToDate resync-suspended:no
+a4488022-a6b3-4c3a-9984-d94be0053ffa node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1003 minor:1003 disk:UpToDate backing_dev:/run/s1-local/1371 quorum:yes
+      blocked:no
+  volume:1004 minor:1004 disk:UpToDate backing_dev:/run/s1-local/1372 quorum:yes
+      blocked:no
+  10.10.100.42:52002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1004 replication:Established peer-disk:UpToDate resync-suspended:no
+b875b260-d06b-4a68-aed4-81f2b22cbd77 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1001 minor:1001 disk:UpToDate backing_dev:/run/s1-local/1350 quorum:yes
+      blocked:no
+  volume:1002 minor:1002 disk:UpToDate backing_dev:/run/s1-local/1351 quorum:yes
+      blocked:no
+  10.10.100.42:52001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1002 replication:Established peer-disk:UpToDate resync-suspended:no
+dd0d8442-0b9e-4ce8-99ea-6c74490f1336 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2010 minor:2010 disk:UpToDate backing_dev:/run/s1-local/1444 quorum:yes
+      blocked:no
+  volume:2011 minor:2011 disk:UpToDate backing_dev:/run/s1-local/1445 quorum:yes
+      blocked:no
+  10.10.100.42:52005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2011 replication:Established peer-disk:UpToDate resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  10.10.100.42:51004 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2002 replication:Established peer-disk:UpToDate resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  10.10.100.42:51005 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2004 replication:Established peer-disk:UpToDate resync-suspended:no
+
+
+
+============================================
+[10/25/2024 2:19:12 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.120259084288TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.184683593728TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 12 volumes. 0.120259084288TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.077309411328TB / 53.51529250816TB
+    metapool : 7 drives. 22 volumes. 0.1073741824TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1202   | N+K: 3    | FreeChunks: 198,960    | FreePercent: 99.80%     - Ok
+Pool: 1201   | N+K: 3    | FreeChunks: 199,071    | FreePercent: 99.86%     - Ok
+Pool: 1190   | N+K: 3    | FreeChunks: 602,703    | FreePercent: 99.93%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306, 1334, 1348, 1369, 1392, 1415, 1442]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 22
+
+Erasure Coding Distribution:
+    22 2+2 volumes
+
+Protocol Distribution:
+    2 Block volumes
+    20 File/Object volumes
+
+Sector Size Distribution:
+    22 4096B volumes
+
+Volume Geometry:
+    Volume 1412 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1345 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1366 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1439 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1389 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1347: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1368: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1414: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1441: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1391: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 0.94%
+    Disk   Utilization: 0.37%
+    Memory Utilization: 41.93%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : Local
+    Node runs 20 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.105
+    10.10.100.104
+    10.10.100.106
+    10.10.100.109
+    10.10.100.102
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1944d790-86c0-4760-a63e-4d9404e3486f node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1008 minor:1008 disk:UpToDate backing_dev:/run/s1-local/1276 quorum:yes
+      blocked:no
+  volume:1009 minor:1009 disk:UpToDate backing_dev:/run/s1-local/1278 quorum:yes
+      blocked:no
+  10.10.100.42:51001 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1009 replication:Established peer-disk:UpToDate resync-suspended:no
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  10.10.100.42:51000 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2006 replication:Established peer-disk:UpToDate resync-suspended:no
+682da947-9539-4064-ae95-08a9cd1049df node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2008 minor:2008 disk:UpToDate backing_dev:/run/s1-local/1417 quorum:yes
+      blocked:no
+  volume:2009 minor:2009 disk:UpToDate backing_dev:/run/s1-local/1418 quorum:yes
+      blocked:no
+  10.10.100.42:52004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2009 replication:Established peer-disk:UpToDate resync-suspended:no
+9e928436-adf4-432a-b6ff-6b5ab601694c node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1005 minor:1005 disk:UpToDate backing_dev:/run/s1-local/1394 quorum:yes
+      blocked:no
+  volume:1006 minor:1006 disk:UpToDate backing_dev:/run/s1-local/1395 quorum:yes
+      blocked:no
+  10.10.100.42:52003 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1006 replication:Established peer-disk:UpToDate resync-suspended:no
+a00ee1a5-f748-432a-b3f7-17735f492bd9 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1010 minor:1010 disk:UpToDate backing_dev:/run/s1-local/1308 quorum:yes
+      blocked:no
+  volume:1011 minor:1011 disk:UpToDate backing_dev:/run/s1-local/1310 quorum:yes
+      blocked:no
+  10.10.100.42:51002 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1011 replication:Established peer-disk:UpToDate resync-suspended:no
+a4488022-a6b3-4c3a-9984-d94be0053ffa node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1003 minor:1003 disk:UpToDate backing_dev:/run/s1-local/1371 quorum:yes
+      blocked:no
+  volume:1004 minor:1004 disk:UpToDate backing_dev:/run/s1-local/1372 quorum:yes
+      blocked:no
+  10.10.100.42:52002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1004 replication:Established peer-disk:UpToDate resync-suspended:no
+b875b260-d06b-4a68-aed4-81f2b22cbd77 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1001 minor:1001 disk:UpToDate backing_dev:/run/s1-local/1350 quorum:yes
+      blocked:no
+  volume:1002 minor:1002 disk:UpToDate backing_dev:/run/s1-local/1351 quorum:yes
+      blocked:no
+  10.10.100.42:52001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1002 replication:Established peer-disk:UpToDate resync-suspended:no
+dd0d8442-0b9e-4ce8-99ea-6c74490f1336 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2010 minor:2010 disk:UpToDate backing_dev:/run/s1-local/1444 quorum:yes
+      blocked:no
+  volume:2011 minor:2011 disk:UpToDate backing_dev:/run/s1-local/1445 quorum:yes
+      blocked:no
+  10.10.100.42:52005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2011 replication:Established peer-disk:UpToDate resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  10.10.100.42:51004 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2002 replication:Established peer-disk:UpToDate resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  10.10.100.42:51005 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2004 replication:Established peer-disk:UpToDate resync-suspended:no
+
+
+
+============================================
+[10/25/2024 2:24:13 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.120259084288TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.184683593728TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 12 volumes. 0.120259084288TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.077309411328TB / 53.51529250816TB
+    metapool : 7 drives. 22 volumes. 0.1073741824TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1202   | N+K: 3    | FreeChunks: 198,960    | FreePercent: 99.80%     - Ok
+Pool: 1201   | N+K: 3    | FreeChunks: 199,071    | FreePercent: 99.86%     - Ok
+Pool: 1190   | N+K: 3    | FreeChunks: 602,703    | FreePercent: 99.93%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306, 1334, 1348, 1369, 1392, 1415, 1442]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 22
+
+Erasure Coding Distribution:
+    22 2+2 volumes
+
+Protocol Distribution:
+    2 Block volumes
+    20 File/Object volumes
+
+Sector Size Distribution:
+    22 4096B volumes
+
+Volume Geometry:
+    Volume 1345 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1412 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1366 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1439 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1389 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1347: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1368: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1414: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1391: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1441: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 1.44%
+    Disk   Utilization: 0.42%
+    Memory Utilization: 43.07%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : Local
+    Node runs 20 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.105
+    10.10.100.104
+    10.10.100.106
+    10.10.100.109
+    10.10.100.102
+    10.10.100.44
+    10.10.100.45
+    10.10.100.46
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1944d790-86c0-4760-a63e-4d9404e3486f node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1008 minor:1008 disk:UpToDate backing_dev:/run/s1-local/1276 quorum:yes
+      blocked:no
+  volume:1009 minor:1009 disk:UpToDate backing_dev:/run/s1-local/1278 quorum:yes
+      blocked:no
+  10.10.100.42:51001 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1009 replication:Established peer-disk:UpToDate resync-suspended:no
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  10.10.100.42:51000 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2006 replication:Established peer-disk:UpToDate resync-suspended:no
+682da947-9539-4064-ae95-08a9cd1049df node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2008 minor:2008 disk:UpToDate backing_dev:/run/s1-local/1417 quorum:yes
+      blocked:no
+  volume:2009 minor:2009 disk:UpToDate backing_dev:/run/s1-local/1418 quorum:yes
+      blocked:no
+  10.10.100.42:52004 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2009 replication:Established peer-disk:UpToDate resync-suspended:no
+9e928436-adf4-432a-b6ff-6b5ab601694c node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1005 minor:1005 disk:UpToDate backing_dev:/run/s1-local/1394 quorum:yes
+      blocked:no
+  volume:1006 minor:1006 disk:UpToDate backing_dev:/run/s1-local/1395 quorum:yes
+      blocked:no
+  10.10.100.42:52003 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1006 replication:Established peer-disk:UpToDate resync-suspended:no
+a00ee1a5-f748-432a-b3f7-17735f492bd9 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1010 minor:1010 disk:UpToDate backing_dev:/run/s1-local/1308 quorum:yes
+      blocked:no
+  volume:1011 minor:1011 disk:UpToDate backing_dev:/run/s1-local/1310 quorum:yes
+      blocked:no
+  10.10.100.42:51002 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1011 replication:Established peer-disk:UpToDate resync-suspended:no
+a4488022-a6b3-4c3a-9984-d94be0053ffa node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1003 minor:1003 disk:UpToDate backing_dev:/run/s1-local/1371 quorum:yes
+      blocked:no
+  volume:1004 minor:1004 disk:UpToDate backing_dev:/run/s1-local/1372 quorum:yes
+      blocked:no
+  10.10.100.42:52002 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1004 replication:Established peer-disk:UpToDate resync-suspended:no
+b875b260-d06b-4a68-aed4-81f2b22cbd77 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1001 minor:1001 disk:UpToDate backing_dev:/run/s1-local/1350 quorum:yes
+      blocked:no
+  volume:1002 minor:1002 disk:UpToDate backing_dev:/run/s1-local/1351 quorum:yes
+      blocked:no
+  10.10.100.42:52001 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1002 replication:Established peer-disk:UpToDate resync-suspended:no
+dd0d8442-0b9e-4ce8-99ea-6c74490f1336 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2010 minor:2010 disk:UpToDate backing_dev:/run/s1-local/1444 quorum:yes
+      blocked:no
+  volume:2011 minor:2011 disk:UpToDate backing_dev:/run/s1-local/1445 quorum:yes
+      blocked:no
+  10.10.100.42:52005 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2011 replication:Established peer-disk:UpToDate resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  10.10.100.42:51004 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2002 replication:Established peer-disk:UpToDate resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  10.10.100.42:51005 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2004 replication:Established peer-disk:UpToDate resync-suspended:no
+
+
+
+============================================
+[10/25/2024 2:29:14 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.120259084288TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.184683593728TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 12 volumes. 0.120259084288TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.077309411328TB / 53.51529250816TB
+    metapool : 7 drives. 22 volumes. 0.1073741824TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1202   | N+K: 3    | FreeChunks: 198,960    | FreePercent: 99.80%     - Ok
+Pool: 1201   | N+K: 3    | FreeChunks: 199,071    | FreePercent: 99.86%     - Ok
+Pool: 1190   | N+K: 3    | FreeChunks: 602,703    | FreePercent: 99.93%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306, 1334, 1348, 1369, 1392, 1415, 1442]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 22
+
+Erasure Coding Distribution:
+    22 2+2 volumes
+
+Protocol Distribution:
+    2 Block volumes
+    20 File/Object volumes
+
+Sector Size Distribution:
+    22 4096B volumes
+
+Volume Geometry:
+    Volume 1345 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1412 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1366 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1439 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1389 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1347: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1368: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1414: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1441: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1391: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 0.79%
+    Disk   Utilization: 0.37%
+    Memory Utilization: 40.81%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : Local
+    Node runs 20 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.109
+    10.10.100.102
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1944d790-86c0-4760-a63e-4d9404e3486f node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1008 minor:1008 disk:UpToDate backing_dev:/run/s1-local/1276 quorum:yes
+      blocked:no
+  volume:1009 minor:1009 disk:UpToDate backing_dev:/run/s1-local/1278 quorum:yes
+      blocked:no
+  10.10.100.42:51001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1009 replication:Established peer-disk:UpToDate resync-suspended:no
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  10.10.100.42:51000 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2006 replication:Established peer-disk:UpToDate resync-suspended:no
+682da947-9539-4064-ae95-08a9cd1049df node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2008 minor:2008 disk:UpToDate backing_dev:/run/s1-local/1417 quorum:yes
+      blocked:no
+  volume:2009 minor:2009 disk:UpToDate backing_dev:/run/s1-local/1418 quorum:yes
+      blocked:no
+  10.10.100.42:52004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2009 replication:Established peer-disk:UpToDate resync-suspended:no
+9e928436-adf4-432a-b6ff-6b5ab601694c node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1005 minor:1005 disk:UpToDate backing_dev:/run/s1-local/1394 quorum:yes
+      blocked:no
+  volume:1006 minor:1006 disk:UpToDate backing_dev:/run/s1-local/1395 quorum:yes
+      blocked:no
+  10.10.100.42:52003 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1006 replication:Established peer-disk:UpToDate resync-suspended:no
+a00ee1a5-f748-432a-b3f7-17735f492bd9 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1010 minor:1010 disk:UpToDate backing_dev:/run/s1-local/1308 quorum:yes
+      blocked:no
+  volume:1011 minor:1011 disk:UpToDate backing_dev:/run/s1-local/1310 quorum:yes
+      blocked:no
+  10.10.100.42:51002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1011 replication:Established peer-disk:UpToDate resync-suspended:no
+a4488022-a6b3-4c3a-9984-d94be0053ffa node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1003 minor:1003 disk:UpToDate backing_dev:/run/s1-local/1371 quorum:yes
+      blocked:no
+  volume:1004 minor:1004 disk:UpToDate backing_dev:/run/s1-local/1372 quorum:yes
+      blocked:no
+  10.10.100.42:52002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1004 replication:Established peer-disk:UpToDate resync-suspended:no
+b875b260-d06b-4a68-aed4-81f2b22cbd77 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1001 minor:1001 disk:UpToDate backing_dev:/run/s1-local/1350 quorum:yes
+      blocked:no
+  volume:1002 minor:1002 disk:UpToDate backing_dev:/run/s1-local/1351 quorum:yes
+      blocked:no
+  10.10.100.42:52001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1002 replication:Established peer-disk:UpToDate resync-suspended:no
+dd0d8442-0b9e-4ce8-99ea-6c74490f1336 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2010 minor:2010 disk:UpToDate backing_dev:/run/s1-local/1444 quorum:yes
+      blocked:no
+  volume:2011 minor:2011 disk:UpToDate backing_dev:/run/s1-local/1445 quorum:yes
+      blocked:no
+  10.10.100.42:52005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2011 replication:Established peer-disk:UpToDate resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  10.10.100.42:51004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2002 replication:Established peer-disk:UpToDate resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  10.10.100.42:51005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2004 replication:Established peer-disk:UpToDate resync-suspended:no
+
+
+
+============================================
+[10/25/2024 2:34:15 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.206158430208TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.267361714176TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 12 volumes. 0.206158430208TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.159987531776TB / 53.51529250816TB
+    metapool : 7 drives. 22 volumes. 0.1073741824TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1202   | N+K: 3    | FreeChunks: 198,960    | FreePercent: 99.80%     - Ok
+Pool: 1201   | N+K: 3    | FreeChunks: 199,071    | FreePercent: 99.86%     - Ok
+Pool: 1190   | N+K: 3    | FreeChunks: 602,703    | FreePercent: 99.93%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306, 1334, 1348, 1369, 1392, 1415, 1442]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 22
+
+Erasure Coding Distribution:
+    22 2+2 volumes
+
+Protocol Distribution:
+    2 Block volumes
+    20 File/Object volumes
+
+Sector Size Distribution:
+    22 4096B volumes
+
+Volume Geometry:
+    Volume 1345 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1412 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1366 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1439 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1389 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1347: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1414: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1368: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1441: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1391: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 2.14%
+    Disk   Utilization: 0.37%
+    Memory Utilization: 42.76%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : Local
+    Node runs 20 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.109
+    10.10.100.102
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1944d790-86c0-4760-a63e-4d9404e3486f node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1008 minor:1008 disk:UpToDate backing_dev:/run/s1-local/1276 quorum:yes
+      blocked:no
+  volume:1009 minor:1009 disk:UpToDate backing_dev:/run/s1-local/1278 quorum:yes
+      blocked:no
+  10.10.100.42:51001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1009 replication:Established peer-disk:UpToDate resync-suspended:no
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  10.10.100.42:51000 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2006 replication:Established peer-disk:UpToDate resync-suspended:no
+682da947-9539-4064-ae95-08a9cd1049df node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2008 minor:2008 disk:UpToDate backing_dev:/run/s1-local/1417 quorum:yes
+      blocked:no
+  volume:2009 minor:2009 disk:UpToDate backing_dev:/run/s1-local/1418 quorum:yes
+      blocked:no
+  10.10.100.42:52004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2009 replication:Established peer-disk:UpToDate resync-suspended:no
+9e928436-adf4-432a-b6ff-6b5ab601694c node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1005 minor:1005 disk:UpToDate backing_dev:/run/s1-local/1394 quorum:yes
+      blocked:no
+  volume:1006 minor:1006 disk:UpToDate backing_dev:/run/s1-local/1395 quorum:yes
+      blocked:no
+  10.10.100.42:52003 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1006 replication:Established peer-disk:UpToDate resync-suspended:no
+a00ee1a5-f748-432a-b3f7-17735f492bd9 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1010 minor:1010 disk:UpToDate backing_dev:/run/s1-local/1308 quorum:yes
+      blocked:no
+  volume:1011 minor:1011 disk:UpToDate backing_dev:/run/s1-local/1310 quorum:yes
+      blocked:no
+  10.10.100.42:51002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1011 replication:Established peer-disk:UpToDate resync-suspended:no
+a4488022-a6b3-4c3a-9984-d94be0053ffa node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1003 minor:1003 disk:UpToDate backing_dev:/run/s1-local/1371 quorum:yes
+      blocked:no
+  volume:1004 minor:1004 disk:UpToDate backing_dev:/run/s1-local/1372 quorum:yes
+      blocked:no
+  10.10.100.42:52002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1004 replication:Established peer-disk:UpToDate resync-suspended:no
+b875b260-d06b-4a68-aed4-81f2b22cbd77 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1001 minor:1001 disk:UpToDate backing_dev:/run/s1-local/1350 quorum:yes
+      blocked:no
+  volume:1002 minor:1002 disk:UpToDate backing_dev:/run/s1-local/1351 quorum:yes
+      blocked:no
+  10.10.100.42:52001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1002 replication:Established peer-disk:UpToDate resync-suspended:no
+dd0d8442-0b9e-4ce8-99ea-6c74490f1336 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2010 minor:2010 disk:UpToDate backing_dev:/run/s1-local/1444 quorum:yes
+      blocked:no
+  volume:2011 minor:2011 disk:UpToDate backing_dev:/run/s1-local/1445 quorum:yes
+      blocked:no
+  10.10.100.42:52005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2011 replication:Established peer-disk:UpToDate resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  10.10.100.42:51004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2002 replication:Established peer-disk:UpToDate resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  10.10.100.42:51005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2004 replication:Established peer-disk:UpToDate resync-suspended:no
+
+
+
+============================================
+[10/25/2024 2:39:15 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.207232172032TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.268435456TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 12 volumes. 0.207232172032TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.1610612736TB / 53.51529250816TB
+    metapool : 7 drives. 22 volumes. 0.1073741824TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1202   | N+K: 3    | FreeChunks: 198,960    | FreePercent: 99.80%     - Ok
+Pool: 1201   | N+K: 3    | FreeChunks: 198,762    | FreePercent: 99.70%     - Ok
+Pool: 1190   | N+K: 3    | FreeChunks: 602,385    | FreePercent: 99.87%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306, 1334, 1348, 1369, 1392, 1415, 1442]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 22
+
+Erasure Coding Distribution:
+    22 2+2 volumes
+
+Protocol Distribution:
+    2 Block volumes
+    20 File/Object volumes
+
+Sector Size Distribution:
+    22 4096B volumes
+
+Volume Geometry:
+    Volume 1412 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1366 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1345 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1439 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1389 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1347: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1414: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1368: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1441: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1391: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 2.17%
+    Disk   Utilization: 0.59%
+    Memory Utilization: 46.49%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : Local
+    Node runs 20 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.109
+    10.10.100.102
+    10.10.100.104
+    10.10.100.105
+    10.10.100.106
+    10.10.100.44
+    10.10.100.45
+    10.10.100.46
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1944d790-86c0-4760-a63e-4d9404e3486f node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1008 minor:1008 disk:UpToDate backing_dev:/run/s1-local/1276 quorum:yes
+      blocked:no
+  volume:1009 minor:1009 disk:UpToDate backing_dev:/run/s1-local/1278 quorum:yes
+      blocked:no
+  10.10.100.42:51001 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1008 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:1009 replication:Off peer-disk:DUnknown resync-suspended:no
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  10.10.100.42:51000 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:2006 replication:Off peer-disk:DUnknown resync-suspended:no
+682da947-9539-4064-ae95-08a9cd1049df node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2008 minor:2008 disk:UpToDate backing_dev:/run/s1-local/1417 quorum:yes
+      blocked:no
+  volume:2009 minor:2009 disk:UpToDate backing_dev:/run/s1-local/1418 quorum:yes
+      blocked:no
+  10.10.100.42:52004 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2008 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:2009 replication:Off peer-disk:DUnknown resync-suspended:no
+9e928436-adf4-432a-b6ff-6b5ab601694c node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1005 minor:1005 disk:UpToDate backing_dev:/run/s1-local/1394 quorum:yes
+      blocked:no
+  volume:1006 minor:1006 disk:UpToDate backing_dev:/run/s1-local/1395 quorum:yes
+      blocked:no
+  10.10.100.42:52003 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1005 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:1006 replication:Off peer-disk:DUnknown resync-suspended:no
+a00ee1a5-f748-432a-b3f7-17735f492bd9 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1010 minor:1010 disk:UpToDate backing_dev:/run/s1-local/1308 quorum:yes
+      blocked:no
+  volume:1011 minor:1011 disk:UpToDate backing_dev:/run/s1-local/1310 quorum:yes
+      blocked:no
+  10.10.100.42:51002 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1010 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:1011 replication:Off peer-disk:DUnknown resync-suspended:no
+a4488022-a6b3-4c3a-9984-d94be0053ffa node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1003 minor:1003 disk:UpToDate backing_dev:/run/s1-local/1371 quorum:yes
+      blocked:no
+  volume:1004 minor:1004 disk:UpToDate backing_dev:/run/s1-local/1372 quorum:yes
+      blocked:no
+  10.10.100.42:52002 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1003 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:1004 replication:Off peer-disk:DUnknown resync-suspended:no
+b875b260-d06b-4a68-aed4-81f2b22cbd77 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1001 minor:1001 disk:UpToDate backing_dev:/run/s1-local/1350 quorum:yes
+      blocked:no
+  volume:1002 minor:1002 disk:UpToDate backing_dev:/run/s1-local/1351 quorum:yes
+      blocked:no
+  10.10.100.42:52001 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1001 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:1002 replication:Off peer-disk:DUnknown resync-suspended:no
+dd0d8442-0b9e-4ce8-99ea-6c74490f1336 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2010 minor:2010 disk:UpToDate backing_dev:/run/s1-local/1444 quorum:yes
+      blocked:no
+  volume:2011 minor:2011 disk:UpToDate backing_dev:/run/s1-local/1445 quorum:yes
+      blocked:no
+  10.10.100.42:52005 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2010 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:2011 replication:Off peer-disk:DUnknown resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  10.10.100.42:51004 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:2002 replication:Off peer-disk:DUnknown resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  10.10.100.42:51005 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:2004 replication:Off peer-disk:DUnknown resync-suspended:no
+
+
+
+============================================
+[10/25/2024 2:44:16 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.2147483648TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.275951648768TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 12 volumes. 0.2147483648TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.168577466368TB / 53.51529250816TB
+    metapool : 7 drives. 22 volumes. 0.1073741824TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1202   | N+K: 3    | FreeChunks: 198,960    | FreePercent: 99.80%     - Ok
+Pool: 1201   | N+K: 3    | FreeChunks: 198,762    | FreePercent: 99.70%     - Ok
+Pool: 1190   | N+K: 3    | FreeChunks: 602,385    | FreePercent: 99.87%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306, 1334, 1348, 1369, 1392, 1415, 1442]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 22
+
+Erasure Coding Distribution:
+    22 2+2 volumes
+
+Protocol Distribution:
+    2 Block volumes
+    20 File/Object volumes
+
+Sector Size Distribution:
+    22 4096B volumes
+
+Volume Geometry:
+    Volume 1412 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1345 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1366 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1439 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1389 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1347: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1414: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1368: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1441: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1391: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 2.69%
+    Disk   Utilization: 0.69%
+    Memory Utilization: 49.89%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : Local
+    Node runs 20 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.109
+    10.10.100.102
+    10.10.100.104
+    10.10.100.105
+    10.10.100.106
+    10.10.100.44
+    10.10.100.45
+    10.10.100.46
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1944d790-86c0-4760-a63e-4d9404e3486f node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1008 minor:1008 disk:UpToDate backing_dev:/run/s1-local/1276 quorum:yes
+      blocked:no
+  volume:1009 minor:1009 disk:UpToDate backing_dev:/run/s1-local/1278 quorum:yes
+      blocked:no
+  10.10.100.42:51001 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1008 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:1009 replication:Off peer-disk:DUnknown resync-suspended:no
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  10.10.100.42:51000 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:2006 replication:Off peer-disk:DUnknown resync-suspended:no
+682da947-9539-4064-ae95-08a9cd1049df node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2008 minor:2008 disk:UpToDate backing_dev:/run/s1-local/1417 quorum:yes
+      blocked:no
+  volume:2009 minor:2009 disk:UpToDate backing_dev:/run/s1-local/1418 quorum:yes
+      blocked:no
+  10.10.100.42:52004 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2008 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:2009 replication:Off peer-disk:DUnknown resync-suspended:no
+9e928436-adf4-432a-b6ff-6b5ab601694c node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1005 minor:1005 disk:UpToDate backing_dev:/run/s1-local/1394 quorum:yes
+      blocked:no
+  volume:1006 minor:1006 disk:UpToDate backing_dev:/run/s1-local/1395 quorum:yes
+      blocked:no
+  10.10.100.42:52003 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1005 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:1006 replication:Off peer-disk:DUnknown resync-suspended:no
+a00ee1a5-f748-432a-b3f7-17735f492bd9 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1010 minor:1010 disk:UpToDate backing_dev:/run/s1-local/1308 quorum:yes
+      blocked:no
+  volume:1011 minor:1011 disk:UpToDate backing_dev:/run/s1-local/1310 quorum:yes
+      blocked:no
+  10.10.100.42:51002 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1010 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:1011 replication:Off peer-disk:DUnknown resync-suspended:no
+a4488022-a6b3-4c3a-9984-d94be0053ffa node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1003 minor:1003 disk:UpToDate backing_dev:/run/s1-local/1371 quorum:yes
+      blocked:no
+  volume:1004 minor:1004 disk:UpToDate backing_dev:/run/s1-local/1372 quorum:yes
+      blocked:no
+  10.10.100.42:52002 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1003 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:1004 replication:Off peer-disk:DUnknown resync-suspended:no
+b875b260-d06b-4a68-aed4-81f2b22cbd77 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1001 minor:1001 disk:UpToDate backing_dev:/run/s1-local/1350 quorum:yes
+      blocked:no
+  volume:1002 minor:1002 disk:UpToDate backing_dev:/run/s1-local/1351 quorum:yes
+      blocked:no
+  10.10.100.42:52001 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1001 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:1002 replication:Off peer-disk:DUnknown resync-suspended:no
+dd0d8442-0b9e-4ce8-99ea-6c74490f1336 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2010 minor:2010 disk:UpToDate backing_dev:/run/s1-local/1444 quorum:yes
+      blocked:no
+  volume:2011 minor:2011 disk:UpToDate backing_dev:/run/s1-local/1445 quorum:yes
+      blocked:no
+  10.10.100.42:52005 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2010 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:2011 replication:Off peer-disk:DUnknown resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  10.10.100.42:51004 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:2002 replication:Off peer-disk:DUnknown resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  10.10.100.42:51005 node-id:1 connection:Connecting role:Unknown congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Off peer-disk:DUnknown resync-suspended:no
+    volume:2004 replication:Off peer-disk:DUnknown resync-suspended:no
+
+
+
+============================================
+[10/25/2024 2:49:17 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.2147483648TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.275951648768TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 12 volumes. 0.2147483648TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.168577466368TB / 53.51529250816TB
+    metapool : 7 drives. 22 volumes. 0.1073741824TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1202   | N+K: 3    | FreeChunks: 198,960    | FreePercent: 99.80%     - Ok
+Pool: 1201   | N+K: 3    | FreeChunks: 198,732    | FreePercent: 99.68%     - Ok
+Pool: 1190   | N+K: 3    | FreeChunks: 602,352    | FreePercent: 99.87%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306, 1334, 1348, 1369, 1392, 1415, 1442]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 22
+
+Erasure Coding Distribution:
+    22 2+2 volumes
+
+Protocol Distribution:
+    2 Block volumes
+    20 File/Object volumes
+
+Sector Size Distribution:
+    22 4096B volumes
+
+Volume Geometry:
+    Volume 1412 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1345 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1366 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1439 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1389 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1347: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1414: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1368: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1441: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1391: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 2.08%
+    Disk   Utilization: 0.37%
+    Memory Utilization: 50.61%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : Local
+    Node runs 20 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.109
+    10.10.100.102
+    10.10.100.104
+    10.10.100.105
+    10.10.100.106
+    10.10.100.44
+    10.10.100.45
+    10.10.100.46
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1944d790-86c0-4760-a63e-4d9404e3486f node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1008 minor:1008 disk:UpToDate backing_dev:/run/s1-local/1276 quorum:yes
+      blocked:no
+  volume:1009 minor:1009 disk:UpToDate backing_dev:/run/s1-local/1278 quorum:yes
+      blocked:no
+  10.10.100.42:51001 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1009 replication:Established peer-disk:UpToDate resync-suspended:no
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  10.10.100.42:51000 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2006 replication:Established peer-disk:UpToDate resync-suspended:no
+682da947-9539-4064-ae95-08a9cd1049df node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2008 minor:2008 disk:UpToDate backing_dev:/run/s1-local/1417 quorum:yes
+      blocked:no
+  volume:2009 minor:2009 disk:UpToDate backing_dev:/run/s1-local/1418 quorum:yes
+      blocked:no
+  10.10.100.42:52004 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2009 replication:Established peer-disk:UpToDate resync-suspended:no
+9e928436-adf4-432a-b6ff-6b5ab601694c node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1005 minor:1005 disk:UpToDate backing_dev:/run/s1-local/1394 quorum:yes
+      blocked:no
+  volume:1006 minor:1006 disk:UpToDate backing_dev:/run/s1-local/1395 quorum:yes
+      blocked:no
+  10.10.100.42:52003 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1006 replication:Established peer-disk:UpToDate resync-suspended:no
+a00ee1a5-f748-432a-b3f7-17735f492bd9 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1010 minor:1010 disk:UpToDate backing_dev:/run/s1-local/1308 quorum:yes
+      blocked:no
+  volume:1011 minor:1011 disk:UpToDate backing_dev:/run/s1-local/1310 quorum:yes
+      blocked:no
+  10.10.100.42:51002 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1011 replication:Established peer-disk:UpToDate resync-suspended:no
+a4488022-a6b3-4c3a-9984-d94be0053ffa node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1003 minor:1003 disk:UpToDate backing_dev:/run/s1-local/1371 quorum:yes
+      blocked:no
+  volume:1004 minor:1004 disk:UpToDate backing_dev:/run/s1-local/1372 quorum:yes
+      blocked:no
+  10.10.100.42:52002 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1004 replication:Established peer-disk:UpToDate resync-suspended:no
+b875b260-d06b-4a68-aed4-81f2b22cbd77 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1001 minor:1001 disk:UpToDate backing_dev:/run/s1-local/1350 quorum:yes
+      blocked:no
+  volume:1002 minor:1002 disk:UpToDate backing_dev:/run/s1-local/1351 quorum:yes
+      blocked:no
+  10.10.100.42:52001 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1002 replication:Established peer-disk:UpToDate resync-suspended:no
+dd0d8442-0b9e-4ce8-99ea-6c74490f1336 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2010 minor:2010 disk:UpToDate backing_dev:/run/s1-local/1444 quorum:yes
+      blocked:no
+  volume:2011 minor:2011 disk:UpToDate backing_dev:/run/s1-local/1445 quorum:yes
+      blocked:no
+  10.10.100.42:52005 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2011 replication:Established peer-disk:UpToDate resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  10.10.100.42:51004 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2002 replication:Established peer-disk:UpToDate resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  10.10.100.42:51005 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2004 replication:Established peer-disk:UpToDate resync-suspended:no
+
+
+
+============================================
+[10/25/2024 2:54:18 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.2147483648TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.275951648768TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 12 volumes. 0.2147483648TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.168577466368TB / 53.51529250816TB
+    metapool : 7 drives. 22 volumes. 0.1073741824TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1202   | N+K: 3    | FreeChunks: 198,960    | FreePercent: 99.80%     - Ok
+Pool: 1201   | N+K: 3    | FreeChunks: 198,732    | FreePercent: 99.68%     - Ok
+Pool: 1190   | N+K: 3    | FreeChunks: 602,352    | FreePercent: 99.87%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306, 1334, 1348, 1369, 1392, 1415, 1442]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 22
+
+Erasure Coding Distribution:
+    22 2+2 volumes
+
+Protocol Distribution:
+    2 Block volumes
+    20 File/Object volumes
+
+Sector Size Distribution:
+    22 4096B volumes
+
+Volume Geometry:
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1345 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1412 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1366 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1439 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1389 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1347: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1414: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1368: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1441: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1391: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 4.92%
+    Disk   Utilization: 2.53%
+    Memory Utilization: 53.62%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : Local
+    Node runs 20 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.109
+    10.10.100.102
+    10.10.100.104
+    10.10.100.105
+    10.10.100.106
+    10.10.100.44
+    10.10.100.45
+    10.10.100.46
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1944d790-86c0-4760-a63e-4d9404e3486f node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1008 minor:1008 disk:UpToDate backing_dev:/run/s1-local/1276 quorum:yes
+      blocked:no
+  volume:1009 minor:1009 disk:UpToDate backing_dev:/run/s1-local/1278 quorum:yes
+      blocked:no
+  10.10.100.42:51001 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:12720 rs-in-flight:0
+    volume:1008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1009 replication:Established peer-disk:UpToDate resync-suspended:no
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  10.10.100.42:51000 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2006 replication:Established peer-disk:UpToDate resync-suspended:no
+682da947-9539-4064-ae95-08a9cd1049df node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2008 minor:2008 disk:UpToDate backing_dev:/run/s1-local/1417 quorum:yes
+      blocked:no
+  volume:2009 minor:2009 disk:UpToDate backing_dev:/run/s1-local/1418 quorum:yes
+      blocked:no
+  10.10.100.42:52004 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2009 replication:Established peer-disk:UpToDate resync-suspended:no
+9e928436-adf4-432a-b6ff-6b5ab601694c node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1005 minor:1005 disk:UpToDate backing_dev:/run/s1-local/1394 quorum:yes
+      blocked:no
+  volume:1006 minor:1006 disk:UpToDate backing_dev:/run/s1-local/1395 quorum:yes
+      blocked:no
+  10.10.100.42:52003 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1006 replication:Established peer-disk:UpToDate resync-suspended:no
+a00ee1a5-f748-432a-b3f7-17735f492bd9 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1010 minor:1010 disk:UpToDate backing_dev:/run/s1-local/1308 quorum:yes
+      blocked:no
+  volume:1011 minor:1011 disk:UpToDate backing_dev:/run/s1-local/1310 quorum:yes
+      blocked:no
+  10.10.100.42:51002 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1011 replication:Established peer-disk:UpToDate resync-suspended:no
+a4488022-a6b3-4c3a-9984-d94be0053ffa node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1003 minor:1003 disk:UpToDate backing_dev:/run/s1-local/1371 quorum:yes
+      blocked:no
+  volume:1004 minor:1004 disk:UpToDate backing_dev:/run/s1-local/1372 quorum:yes
+      blocked:no
+  10.10.100.42:52002 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1004 replication:Established peer-disk:UpToDate resync-suspended:no
+b875b260-d06b-4a68-aed4-81f2b22cbd77 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:1001 minor:1001 disk:UpToDate backing_dev:/run/s1-local/1350 quorum:yes
+      blocked:no
+  volume:1002 minor:1002 disk:UpToDate backing_dev:/run/s1-local/1351 quorum:yes
+      blocked:no
+  10.10.100.42:52001 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1002 replication:Established peer-disk:UpToDate resync-suspended:no
+dd0d8442-0b9e-4ce8-99ea-6c74490f1336 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2010 minor:2010 disk:UpToDate backing_dev:/run/s1-local/1444 quorum:yes
+      blocked:no
+  volume:2011 minor:2011 disk:UpToDate backing_dev:/run/s1-local/1445 quorum:yes
+      blocked:no
+  10.10.100.42:52005 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2011 replication:Established peer-disk:UpToDate resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  10.10.100.42:51004 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2002 replication:Established peer-disk:UpToDate resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Primary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  10.10.100.42:51005 node-id:1 connection:Connected role:Secondary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2004 replication:Established peer-disk:UpToDate resync-suspended:no
+
+
+
+============================================
+[10/25/2024 2:59:19 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.2147483648TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.275951648768TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 12 volumes. 0.2147483648TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.168577466368TB / 53.51529250816TB
+    metapool : 7 drives. 22 volumes. 0.1073741824TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1202   | N+K: 3    | FreeChunks: 198,960    | FreePercent: 99.80%     - Ok
+Pool: 1201   | N+K: 3    | FreeChunks: 198,732    | FreePercent: 99.68%     - Ok
+Pool: 1190   | N+K: 3    | FreeChunks: 602,352    | FreePercent: 99.87%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306, 1334, 1348, 1369, 1392, 1415, 1442]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 22
+
+Erasure Coding Distribution:
+    22 2+2 volumes
+
+Protocol Distribution:
+    2 Block volumes
+    20 File/Object volumes
+
+Sector Size Distribution:
+    22 4096B volumes
+
+Volume Geometry:
+    Volume 1345 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1412 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1366 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1439 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1389 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1347: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1414: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1368: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1441: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1391: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 1.24%
+    Disk   Utilization: 0.36%
+    Memory Utilization: 48.07%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : Local
+    Node runs 20 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.109
+    10.10.100.102
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1944d790-86c0-4760-a63e-4d9404e3486f node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1008 minor:1008 disk:UpToDate backing_dev:/run/s1-local/1276 quorum:yes
+      blocked:no
+  volume:1009 minor:1009 disk:UpToDate backing_dev:/run/s1-local/1278 quorum:yes
+      blocked:no
+  10.10.100.42:51001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1009 replication:Established peer-disk:UpToDate resync-suspended:no
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  10.10.100.42:51000 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2006 replication:Established peer-disk:UpToDate resync-suspended:no
+682da947-9539-4064-ae95-08a9cd1049df node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2008 minor:2008 disk:UpToDate backing_dev:/run/s1-local/1417 quorum:yes
+      blocked:no
+  volume:2009 minor:2009 disk:UpToDate backing_dev:/run/s1-local/1418 quorum:yes
+      blocked:no
+  10.10.100.42:52004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2009 replication:Established peer-disk:UpToDate resync-suspended:no
+9e928436-adf4-432a-b6ff-6b5ab601694c node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1005 minor:1005 disk:UpToDate backing_dev:/run/s1-local/1394 quorum:yes
+      blocked:no
+  volume:1006 minor:1006 disk:UpToDate backing_dev:/run/s1-local/1395 quorum:yes
+      blocked:no
+  10.10.100.42:52003 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1006 replication:Established peer-disk:UpToDate resync-suspended:no
+a00ee1a5-f748-432a-b3f7-17735f492bd9 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1010 minor:1010 disk:UpToDate backing_dev:/run/s1-local/1308 quorum:yes
+      blocked:no
+  volume:1011 minor:1011 disk:UpToDate backing_dev:/run/s1-local/1310 quorum:yes
+      blocked:no
+  10.10.100.42:51002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1011 replication:Established peer-disk:UpToDate resync-suspended:no
+a4488022-a6b3-4c3a-9984-d94be0053ffa node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1003 minor:1003 disk:UpToDate backing_dev:/run/s1-local/1371 quorum:yes
+      blocked:no
+  volume:1004 minor:1004 disk:UpToDate backing_dev:/run/s1-local/1372 quorum:yes
+      blocked:no
+  10.10.100.42:52002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1004 replication:Established peer-disk:UpToDate resync-suspended:no
+b875b260-d06b-4a68-aed4-81f2b22cbd77 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1001 minor:1001 disk:UpToDate backing_dev:/run/s1-local/1350 quorum:yes
+      blocked:no
+  volume:1002 minor:1002 disk:UpToDate backing_dev:/run/s1-local/1351 quorum:yes
+      blocked:no
+  10.10.100.42:52001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1002 replication:Established peer-disk:UpToDate resync-suspended:no
+dd0d8442-0b9e-4ce8-99ea-6c74490f1336 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2010 minor:2010 disk:UpToDate backing_dev:/run/s1-local/1444 quorum:yes
+      blocked:no
+  volume:2011 minor:2011 disk:UpToDate backing_dev:/run/s1-local/1445 quorum:yes
+      blocked:no
+  10.10.100.42:52005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2011 replication:Established peer-disk:UpToDate resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  10.10.100.42:51004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2002 replication:Established peer-disk:UpToDate resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  10.10.100.42:51005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2004 replication:Established peer-disk:UpToDate resync-suspended:no
+
+
+
+============================================
+[10/25/2024 3:04:20 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.2147483648TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.275951648768TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 12 volumes. 0.2147483648TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.168577466368TB / 53.51529250816TB
+    metapool : 7 drives. 22 volumes. 0.1073741824TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1202   | N+K: 3    | FreeChunks: 198,960    | FreePercent: 99.80%     - Ok
+Pool: 1201   | N+K: 3    | FreeChunks: 198,732    | FreePercent: 99.68%     - Ok
+Pool: 1190   | N+K: 3    | FreeChunks: 602,352    | FreePercent: 99.87%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306, 1334, 1348, 1369, 1392, 1415, 1442]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 22
+
+Erasure Coding Distribution:
+    22 2+2 volumes
+
+Protocol Distribution:
+    2 Block volumes
+    20 File/Object volumes
+
+Sector Size Distribution:
+    22 4096B volumes
+
+Volume Geometry:
+    Volume 1345 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1412 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1366 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1439 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1389 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1347: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1414: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1368: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1441: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1391: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 2.65%
+    Disk   Utilization: 0.43%
+    Memory Utilization: 48.25%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : Local
+    Node runs 20 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.109
+    10.10.100.102
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1944d790-86c0-4760-a63e-4d9404e3486f node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1008 minor:1008 disk:UpToDate backing_dev:/run/s1-local/1276 quorum:yes
+      blocked:no
+  volume:1009 minor:1009 disk:UpToDate backing_dev:/run/s1-local/1278 quorum:yes
+      blocked:no
+  10.10.100.42:51001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1009 replication:Established peer-disk:UpToDate resync-suspended:no
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  10.10.100.42:51000 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2006 replication:Established peer-disk:UpToDate resync-suspended:no
+682da947-9539-4064-ae95-08a9cd1049df node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2008 minor:2008 disk:UpToDate backing_dev:/run/s1-local/1417 quorum:yes
+      blocked:no
+  volume:2009 minor:2009 disk:UpToDate backing_dev:/run/s1-local/1418 quorum:yes
+      blocked:no
+  10.10.100.42:52004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2009 replication:Established peer-disk:UpToDate resync-suspended:no
+9e928436-adf4-432a-b6ff-6b5ab601694c node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1005 minor:1005 disk:UpToDate backing_dev:/run/s1-local/1394 quorum:yes
+      blocked:no
+  volume:1006 minor:1006 disk:UpToDate backing_dev:/run/s1-local/1395 quorum:yes
+      blocked:no
+  10.10.100.42:52003 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1006 replication:Established peer-disk:UpToDate resync-suspended:no
+a00ee1a5-f748-432a-b3f7-17735f492bd9 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1010 minor:1010 disk:UpToDate backing_dev:/run/s1-local/1308 quorum:yes
+      blocked:no
+  volume:1011 minor:1011 disk:UpToDate backing_dev:/run/s1-local/1310 quorum:yes
+      blocked:no
+  10.10.100.42:51002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1011 replication:Established peer-disk:UpToDate resync-suspended:no
+a4488022-a6b3-4c3a-9984-d94be0053ffa node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1003 minor:1003 disk:UpToDate backing_dev:/run/s1-local/1371 quorum:yes
+      blocked:no
+  volume:1004 minor:1004 disk:UpToDate backing_dev:/run/s1-local/1372 quorum:yes
+      blocked:no
+  10.10.100.42:52002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1004 replication:Established peer-disk:UpToDate resync-suspended:no
+b875b260-d06b-4a68-aed4-81f2b22cbd77 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1001 minor:1001 disk:UpToDate backing_dev:/run/s1-local/1350 quorum:yes
+      blocked:no
+  volume:1002 minor:1002 disk:UpToDate backing_dev:/run/s1-local/1351 quorum:yes
+      blocked:no
+  10.10.100.42:52001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1002 replication:Established peer-disk:UpToDate resync-suspended:no
+dd0d8442-0b9e-4ce8-99ea-6c74490f1336 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2010 minor:2010 disk:UpToDate backing_dev:/run/s1-local/1444 quorum:yes
+      blocked:no
+  volume:2011 minor:2011 disk:UpToDate backing_dev:/run/s1-local/1445 quorum:yes
+      blocked:no
+  10.10.100.42:52005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2011 replication:Established peer-disk:UpToDate resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  10.10.100.42:51004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2002 replication:Established peer-disk:UpToDate resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  10.10.100.42:51005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2004 replication:Established peer-disk:UpToDate resync-suspended:no
+
+
+
+============================================
+[10/25/2024 3:09:20 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.233001975808TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.294205259776TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 12 volumes. 0.233001975808TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.186831077376TB / 53.51529250816TB
+    metapool : 7 drives. 22 volumes. 0.1073741824TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1202   | N+K: 3    | FreeChunks: 198,960    | FreePercent: 99.80%     - Ok
+Pool: 1201   | N+K: 3    | FreeChunks: 198,732    | FreePercent: 99.68%     - Ok
+Pool: 1190   | N+K: 3    | FreeChunks: 602,352    | FreePercent: 99.87%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306, 1334, 1348, 1369, 1392, 1415, 1442]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 22
+
+Erasure Coding Distribution:
+    22 2+2 volumes
+
+Protocol Distribution:
+    2 Block volumes
+    20 File/Object volumes
+
+Sector Size Distribution:
+    22 4096B volumes
+
+Volume Geometry:
+    Volume 1345 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1412 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1366 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1439 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1389 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1347: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1414: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1368: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1441: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1391: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 4.95%
+    Disk   Utilization: 8.55%
+    Memory Utilization: 48.24%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : Local
+    Node runs 20 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.109
+    10.10.100.102
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1944d790-86c0-4760-a63e-4d9404e3486f node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1008 minor:1008 disk:UpToDate backing_dev:/run/s1-local/1276 quorum:yes
+      blocked:no
+  volume:1009 minor:1009 disk:UpToDate backing_dev:/run/s1-local/1278 quorum:yes
+      blocked:no
+  10.10.100.42:51001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1009 replication:Established peer-disk:UpToDate resync-suspended:no
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  10.10.100.42:51000 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2006 replication:Established peer-disk:UpToDate resync-suspended:no
+682da947-9539-4064-ae95-08a9cd1049df node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2008 minor:2008 disk:UpToDate backing_dev:/run/s1-local/1417 quorum:yes
+      blocked:no
+  volume:2009 minor:2009 disk:UpToDate backing_dev:/run/s1-local/1418 quorum:yes
+      blocked:no
+  10.10.100.42:52004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2009 replication:Established peer-disk:UpToDate resync-suspended:no
+9e928436-adf4-432a-b6ff-6b5ab601694c node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1005 minor:1005 disk:UpToDate backing_dev:/run/s1-local/1394 quorum:yes
+      blocked:no
+  volume:1006 minor:1006 disk:UpToDate backing_dev:/run/s1-local/1395 quorum:yes
+      blocked:no
+  10.10.100.42:52003 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1006 replication:Established peer-disk:UpToDate resync-suspended:no
+a00ee1a5-f748-432a-b3f7-17735f492bd9 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1010 minor:1010 disk:UpToDate backing_dev:/run/s1-local/1308 quorum:yes
+      blocked:no
+  volume:1011 minor:1011 disk:UpToDate backing_dev:/run/s1-local/1310 quorum:yes
+      blocked:no
+  10.10.100.42:51002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1011 replication:Established peer-disk:UpToDate resync-suspended:no
+a4488022-a6b3-4c3a-9984-d94be0053ffa node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1003 minor:1003 disk:UpToDate backing_dev:/run/s1-local/1371 quorum:yes
+      blocked:no
+  volume:1004 minor:1004 disk:UpToDate backing_dev:/run/s1-local/1372 quorum:yes
+      blocked:no
+  10.10.100.42:52002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1004 replication:Established peer-disk:UpToDate resync-suspended:no
+b875b260-d06b-4a68-aed4-81f2b22cbd77 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1001 minor:1001 disk:UpToDate backing_dev:/run/s1-local/1350 quorum:yes
+      blocked:no
+  volume:1002 minor:1002 disk:UpToDate backing_dev:/run/s1-local/1351 quorum:yes
+      blocked:no
+  10.10.100.42:52001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1002 replication:Established peer-disk:UpToDate resync-suspended:no
+dd0d8442-0b9e-4ce8-99ea-6c74490f1336 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2010 minor:2010 disk:UpToDate backing_dev:/run/s1-local/1444 quorum:yes
+      blocked:no
+  volume:2011 minor:2011 disk:UpToDate backing_dev:/run/s1-local/1445 quorum:yes
+      blocked:no
+  10.10.100.42:52005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2011 replication:Established peer-disk:UpToDate resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  10.10.100.42:51004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2002 replication:Established peer-disk:UpToDate resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  10.10.100.42:51005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2004 replication:Established peer-disk:UpToDate resync-suspended:no
+
+
+
+============================================
+[10/25/2024 3:14:21 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.265214230528TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.326417514496TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 12 volumes. 0.265214230528TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.219043332096TB / 53.51529250816TB
+    metapool : 7 drives. 22 volumes. 0.1073741824TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1202   | N+K: 3    | FreeChunks: 198,960    | FreePercent: 99.80%     - Ok
+Pool: 1201   | N+K: 3    | FreeChunks: 198,732    | FreePercent: 99.68%     - Ok
+Pool: 1190   | N+K: 3    | FreeChunks: 602,352    | FreePercent: 99.87%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306, 1334, 1348, 1369, 1392, 1415, 1442]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 22
+
+Erasure Coding Distribution:
+    22 2+2 volumes
+
+Protocol Distribution:
+    2 Block volumes
+    20 File/Object volumes
+
+Sector Size Distribution:
+    22 4096B volumes
+
+Volume Geometry:
+    Volume 1345 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1412 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1366 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1439 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1389 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1347: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1414: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1368: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1441: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1391: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 7.81%
+    Disk   Utilization: 1.22%
+    Memory Utilization: 48.24%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : Local
+    Node runs 20 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.109
+    10.10.100.102
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1944d790-86c0-4760-a63e-4d9404e3486f node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1008 minor:1008 disk:UpToDate backing_dev:/run/s1-local/1276 quorum:yes
+      blocked:no
+  volume:1009 minor:1009 disk:UpToDate backing_dev:/run/s1-local/1278 quorum:yes
+      blocked:no
+  10.10.100.42:51001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1009 replication:Established peer-disk:UpToDate resync-suspended:no
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  10.10.100.42:51000 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2006 replication:Established peer-disk:UpToDate resync-suspended:no
+682da947-9539-4064-ae95-08a9cd1049df node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2008 minor:2008 disk:UpToDate backing_dev:/run/s1-local/1417 quorum:yes
+      blocked:no
+  volume:2009 minor:2009 disk:UpToDate backing_dev:/run/s1-local/1418 quorum:yes
+      blocked:no
+  10.10.100.42:52004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2009 replication:Established peer-disk:UpToDate resync-suspended:no
+9e928436-adf4-432a-b6ff-6b5ab601694c node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1005 minor:1005 disk:UpToDate backing_dev:/run/s1-local/1394 quorum:yes
+      blocked:no
+  volume:1006 minor:1006 disk:UpToDate backing_dev:/run/s1-local/1395 quorum:yes
+      blocked:no
+  10.10.100.42:52003 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1006 replication:Established peer-disk:UpToDate resync-suspended:no
+a00ee1a5-f748-432a-b3f7-17735f492bd9 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1010 minor:1010 disk:UpToDate backing_dev:/run/s1-local/1308 quorum:yes
+      blocked:no
+  volume:1011 minor:1011 disk:UpToDate backing_dev:/run/s1-local/1310 quorum:yes
+      blocked:no
+  10.10.100.42:51002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1011 replication:Established peer-disk:UpToDate resync-suspended:no
+a4488022-a6b3-4c3a-9984-d94be0053ffa node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1003 minor:1003 disk:UpToDate backing_dev:/run/s1-local/1371 quorum:yes
+      blocked:no
+  volume:1004 minor:1004 disk:UpToDate backing_dev:/run/s1-local/1372 quorum:yes
+      blocked:no
+  10.10.100.42:52002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1004 replication:Established peer-disk:UpToDate resync-suspended:no
+b875b260-d06b-4a68-aed4-81f2b22cbd77 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1001 minor:1001 disk:UpToDate backing_dev:/run/s1-local/1350 quorum:yes
+      blocked:no
+  volume:1002 minor:1002 disk:UpToDate backing_dev:/run/s1-local/1351 quorum:yes
+      blocked:no
+  10.10.100.42:52001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1002 replication:Established peer-disk:UpToDate resync-suspended:no
+dd0d8442-0b9e-4ce8-99ea-6c74490f1336 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2010 minor:2010 disk:UpToDate backing_dev:/run/s1-local/1444 quorum:yes
+      blocked:no
+  volume:2011 minor:2011 disk:UpToDate backing_dev:/run/s1-local/1445 quorum:yes
+      blocked:no
+  10.10.100.42:52005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2011 replication:Established peer-disk:UpToDate resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  10.10.100.42:51004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2002 replication:Established peer-disk:UpToDate resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  10.10.100.42:51005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2004 replication:Established peer-disk:UpToDate resync-suspended:no
+
+
+
+============================================
+[10/25/2024 3:19:22 AM] Periodic Information
+============================================
+
+--------------------------------------------
+Drives, Capacity & Pools
+--------------------------------------------
+Drives and Capacity Stats:
+    84 HDD drives.  Capacity : 0.292057776128TB / 1295.261204742144TB
+    2 SSD drives.  Capacity : 0TB / 0TB
+    18 NVMe drives. Capacity : 0.353261060096TB / 107.03058501632TB
+
+10 Manual Pools:
+    datapool : 9 drives. 12 volumes. 0.292057776128TB / 161.907650592768TB
+    hdd1 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd2 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd3 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd4 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd5 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd6 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    hdd7 : 9 drives. 0 volumes. 0TB / 161.907650592768TB
+    tierpool : 7 drives. 0 volumes. 0.245886877696TB / 53.51529250816TB
+    metapool : 7 drives. 22 volumes. 0.1073741824TB / 53.51529250816TB
+
+ThinProvisioningStates (by pool):
+Pool: 1202   | N+K: 3    | FreeChunks: 198,960    | FreePercent: 99.80%     - Ok
+Pool: 1201   | N+K: 3    | FreeChunks: 198,531    | FreePercent: 99.58%     - Ok
+Pool: 1190   | N+K: 3    | FreeChunks: 602,151    | FreePercent: 99.83%     - Ok
+
+Ok                     - ConsistencyGroups: [1206, 1216, 1236, 1255, 1274, 1306, 1334, 1348, 1369, 1392, 1415, 1442]
+
+
+--------------------------------------------
+Volumes
+--------------------------------------------
+Volumes : 22
+
+Erasure Coding Distribution:
+    22 2+2 volumes
+
+Protocol Distribution:
+    2 Block volumes
+    20 File/Object volumes
+
+Sector Size Distribution:
+    22 4096B volumes
+
+Volume Geometry:
+    Volume 1345 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1412 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1366 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1215 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1235 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1273 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1305 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1254 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1309: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1259: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1439 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1389 (Tiered): BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1347: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1222: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1414: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1368: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1441: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1391: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1277: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+    Volume 1240: BlockSize=4096, MaxVolumeSizeInBlocks=137438953472, UsageOutOfGeometryMax=0.00%
+
+--------------------------------------------
+Statistics
+--------------------------------------------
+Hardware Utilization:
+    CPU    Utilization: 0.53%
+    Disk   Utilization: 0.34%
+    Memory Utilization: 48.24%
+
+--------------------------------------------
+Rebuild Stats
+--------------------------------------------
+No degraded volumes & no rebuild occurring at the moment.
+
+--------------------------------------------
+HA
+--------------------------------------------
+HA State : Local
+    Node runs 20 volumes
+    Is node leader : True
+    Peer node status : available - True. alive - True
+    Is node running NAS services : True
+
+--------------------------------------------
+Network
+--------------------------------------------
+IP Addresses:
+    192.168.100.100
+    10.10.100.100
+    10.10.100.109
+    10.10.100.102
+    198.51.100.1
+    198.51.100.254
+    198.51.100.253
+
+--------------------------------------------
+Replication Status
+--------------------------------------------
+
+1944d790-86c0-4760-a63e-4d9404e3486f node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1008 minor:1008 disk:UpToDate backing_dev:/run/s1-local/1276 quorum:yes
+      blocked:no
+  volume:1009 minor:1009 disk:UpToDate backing_dev:/run/s1-local/1278 quorum:yes
+      blocked:no
+  10.10.100.42:51001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1009 replication:Established peer-disk:UpToDate resync-suspended:no
+1e7167b9-7ac1-4e90-ad4e-20d701ceff0e node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2005 minor:2005 disk:UpToDate backing_dev:/run/s1-local/1257 quorum:yes
+      blocked:no
+  volume:2006 minor:2006 disk:UpToDate backing_dev:/run/s1-local/1260 quorum:yes
+      blocked:no
+  10.10.100.42:51000 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2006 replication:Established peer-disk:UpToDate resync-suspended:no
+682da947-9539-4064-ae95-08a9cd1049df node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2008 minor:2008 disk:UpToDate backing_dev:/run/s1-local/1417 quorum:yes
+      blocked:no
+  volume:2009 minor:2009 disk:UpToDate backing_dev:/run/s1-local/1418 quorum:yes
+      blocked:no
+  10.10.100.42:52004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2008 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2009 replication:Established peer-disk:UpToDate resync-suspended:no
+9e928436-adf4-432a-b6ff-6b5ab601694c node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1005 minor:1005 disk:UpToDate backing_dev:/run/s1-local/1394 quorum:yes
+      blocked:no
+  volume:1006 minor:1006 disk:UpToDate backing_dev:/run/s1-local/1395 quorum:yes
+      blocked:no
+  10.10.100.42:52003 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1005 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1006 replication:Established peer-disk:UpToDate resync-suspended:no
+a00ee1a5-f748-432a-b3f7-17735f492bd9 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1010 minor:1010 disk:UpToDate backing_dev:/run/s1-local/1308 quorum:yes
+      blocked:no
+  volume:1011 minor:1011 disk:UpToDate backing_dev:/run/s1-local/1310 quorum:yes
+      blocked:no
+  10.10.100.42:51002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1011 replication:Established peer-disk:UpToDate resync-suspended:no
+a4488022-a6b3-4c3a-9984-d94be0053ffa node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1003 minor:1003 disk:UpToDate backing_dev:/run/s1-local/1371 quorum:yes
+      blocked:no
+  volume:1004 minor:1004 disk:UpToDate backing_dev:/run/s1-local/1372 quorum:yes
+      blocked:no
+  10.10.100.42:52002 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1004 replication:Established peer-disk:UpToDate resync-suspended:no
+b875b260-d06b-4a68-aed4-81f2b22cbd77 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:1001 minor:1001 disk:UpToDate backing_dev:/run/s1-local/1350 quorum:yes
+      blocked:no
+  volume:1002 minor:1002 disk:UpToDate backing_dev:/run/s1-local/1351 quorum:yes
+      blocked:no
+  10.10.100.42:52001 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:1001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:1002 replication:Established peer-disk:UpToDate resync-suspended:no
+dd0d8442-0b9e-4ce8-99ea-6c74490f1336 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2010 minor:2010 disk:UpToDate backing_dev:/run/s1-local/1444 quorum:yes
+      blocked:no
+  volume:2011 minor:2011 disk:UpToDate backing_dev:/run/s1-local/1445 quorum:yes
+      blocked:no
+  10.10.100.42:52005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2010 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2011 replication:Established peer-disk:UpToDate resync-suspended:no
+ddb997fb-28ac-47e8-a551-4b9a0b54db1b node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2001 minor:2001 disk:UpToDate backing_dev:/run/s1-local/1218 quorum:yes
+      blocked:no
+  volume:2002 minor:2002 disk:UpToDate backing_dev:/run/s1-local/1223 quorum:yes
+      blocked:no
+  10.10.100.42:51004 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2001 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2002 replication:Established peer-disk:UpToDate resync-suspended:no
+f2bcfbc1-c029-427d-954a-29f68ca7e890 node-id:2 role:Secondary suspended:no
+    force-io-failures:no
+  volume:2003 minor:2003 disk:UpToDate backing_dev:/run/s1-local/1238 quorum:yes
+      blocked:no
+  volume:2004 minor:2004 disk:UpToDate backing_dev:/run/s1-local/1241 quorum:yes
+      blocked:no
+  10.10.100.42:51005 node-id:1 connection:Connected role:Primary congested:no
+      ap-in-flight:0 rs-in-flight:0
+    volume:2003 replication:Established peer-disk:UpToDate resync-suspended:no
+    volume:2004 replication:Established peer-disk:UpToDate resync-suspended:no
+
+
