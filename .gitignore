@@ -172,6 +172,7 @@ cython_debug/
 
 # Data files - logs, parquet, CSV outputs
 data/
+jan-data/
 out/
 out_test/
 out_non_random/
