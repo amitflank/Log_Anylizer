@@ -39,7 +39,7 @@ python -m pip install -e .
 ```bash
 alias bucket-build='python -m log_ingest.cli_commands.cli bucket create'
 alias bucket-select='python -m log_ingest.cli_commands.cli select-buckets'
-alias shap='python -m gbdt_pipeline.cli'
+alias shap='python -m gbdt_pipeline.cli shap'
 ```
 
 ## Run the CLI (follow UserDocs)
